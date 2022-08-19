@@ -1,0 +1,186 @@
+<div class="tela mod1tela10" ng-swipe-up="vm.game.next()" ng-swipe-down="vm.game.prev()">
+
+  <div class="container-fluid no-padding">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="no-wrap horizontal-scroll">
+
+          <div class="table">
+            <div class="table-cell">
+              <img src="assets/images/p1/desktop/infografico/infografico.png" alt="" style="height: calc(100vh - 20px); height: calc(100 * var(--vh) - 20px); width: auto;">
+            </div>
+            <!--div class="table-cell">
+              <div class="inline-block-middle fw-5 normal-wrap"></div>
+
+              <div class="inline-block-middle fw-35 normal-wrap">
+                <div class="menu-item mt-1">
+                  <div class="menu-number">
+                    <p>1</p>
+                  </div>
+                  <div class="menu-text">
+                    <p>Identificar corretamente os pacientes</p>
+                  </div>
+                </div>
+
+                <img class="img-responsive my-1" src="assets/images/p1/desktop/imagens/manchete_01.png" alt="Imagem da manchete do Correio Brasiliense: 41 dias depois, exame de DNA confirma troca de bebês em hospital de Goiás.">
+
+                <div class="bg-white black border-radius px-2 py-0 m-px-2 m-py-0 box-shadow mt-1 m-mt-1">
+                  <img class="img-responsive" src="assets/images/p1/desktop/imagens/duvida_01.png" alt="Imagem com o título Como podemos evitar esse tipo de incidente?">
+                </div>
+
+                <div class="bg-white border-radius box-shadow mt-1" style="padding: 0.2rem 1rem;">
+                  <p class="blue semibold center">Utilize a barra de rolagem ou deslize a tela. </p>
+                </div>
+              </div>
+
+              <div class="inline-block-middle fw-14 normal-wrap">
+                <img class="img-responsive" src="assets/images/p1/desktop/formas/linha_01.png" alt="">
+              </div>
+
+              <div class="inline-block-middle fw-36 normal-wrap">
+                <div class="bg-white black border-radius px-3 py-2 m-px-3 m-py-2 box-shadow">
+                  <img class="img-responsive block centered mb-1 m-mb-1 px-1" src="assets/images/p1/desktop/imagens/frase_01.png" alt="Imagem com o título Identificando corretamente os pacientes">
+
+                  <div class="bg-blue white border-radius px-2 py-2 m-px-2 m-py-2 box-shadow">
+                    <p>Garantir a correta identificação do paciente a fim de reduzir a ocorrência de incidentes. </p>
+                  </div>
+
+                  <p class="mt-1 m-mt-1 px-1"> O primeiro passo para o cuidado seguro é a identificação adequada do paciente, devemos assegurar que o cuidado seja prestado à pessoa para a qual se destina determinado tipo de procedimento ou tratamento; devemos prevenir a ocorrência de erros ou enganos que possam gerar a ocorrência de incidentes ou até mesmo eventos adversos e, consequentemente, dano ao paciente. </p>
+
+                </div>
+              </div>
+
+              <div class="inline-block-middle fw-14 normal-wrap">
+                <img class="img-responsive" src="assets/images/p1/desktop/formas/linha_01.png" alt="">
+              </div>
+
+              <div class="inline-block-middle fw-40 normal-wrap pl-1 m-pl-1">
+                <p class="black bold">Clique nos destaques e veja essas informações importantes que podem te ajudar:</p>
+
+                <div class="slick-container">
+
+                  <div>
+                    <div class="bg-light-green white semibold _p1 border-radius w-100 h-50">
+                      <div class="table-cell">
+                        <p tabindex="0">• Todo paciente deve ser identificado utilizando-se NOME COMPLETO E NÚMERO DE PRONTUÁRIO, sendo que a data de nascimento e idade podem ser utilizadas como itens adicionais de checagem.</p>
+                        <p tabindex="0"><span class="bigtext bold">IMPORTANTE!</span><br/> Nenhum paciente pode ser identificado pelo número do quarto ou pela localização do hospital, ou receber qualquer tipo de cuidado sem estar identificado. </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="bg-light-green white semibold _p1 border-radius w-100 h-50">
+                      <div class="table-cell">
+                        <p tabindex="0">• A equipe que assiste ao paciente deve realizar a conferência de sua pulseira de identificação antes da sua admissão na unidade e antes de realizar qualquer procedimento, na realização de exames e/ou coleta de amostras, procedimentos cirúrgicos e anestésicos, procedimentos e tratamentos em geral, na administração de medicamentos e na instalação de sangue ou hemoderivados.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="bg-light-green white semibold _p1 border-radius w-100 h-50">
+                      <div class="table-cell">
+                        <p tabindex="0">• O processo de identificação segura também contempla a identificação dos elementos de tratamento e cuidados como: medicamentos, amostras de sangue, hemoderivados, anatomopatológicos, dietas, leite materno, os quais devem estar rotulados com o nome completo e número de prontuário. </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="bg-light-green white semibold _p1 border-radius w-100 h-50">
+                      <div class="table-cell">
+                        <p tabindex="0">• Existem circunstâncias especiais que impedem o uso da pulseira de identificação nos membros superiores e inferiores, tais como ausência total de membros, facilidade em desenvolver lesões de pele, inchaço generalizado, queimados, recém-nascido prematuro extremo, crianças fragilizadas física e emocionalmente, quadro de demência. <span class="bold">APENAS NESTES CASOS é permitida a manutenção da pulseira de identificação ou etiqueta afixada na roupa, cabeceira do leito, berço ou incubadora. </span></p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="center mt-1 m-mt-1" ng-if="vm.game.screenFinished()">
+                  <div class="comp-hover-btn inline-block-middle" ng-click="vm.game.gotoTela(2)">
+                    <img class="normal" src="assets/images/p1/desktop/botoes/botao_voltar_ao_menu.png" alt="Botão voltar ao menu" style="max-height: 4rem;">
+                    <img class="over" src="assets/images/p1/desktop/botoes/botao_voltar_ao_menu_hover.png" alt="Botão voltar ao menu" style="max-height: 4rem;">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="inline-block-middle fw-5 normal-wrap"></div>
+
+            </div-->
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!--div class="row horizontal-scroll">
+      <div class="col-sm-5">
+
+        <div class="pl-5">
+          <div class="menu-item">
+            <div class="menu-number">
+              <p>1</p>
+            </div>
+            <div class="menu-text">
+              <p>Identificar corretamente os pacientes</p>
+            </div>
+          </div>
+
+          <img class="img-responsive my-1" src="assets/images/p1/desktop/imagens/manchete_01.png" alt="">
+
+          <div class="bg-white black border-radius px-2 py-0 m-px-2 m-py-0 box-shadow mt-1 m-mt-1">
+            <img class="img-responsive" src="assets/images/p1/desktop/imagens/duvida_01.png" alt="">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-2">
+        <div class="">
+          <img class="img-responsive" src="assets/images/p1/desktop/formas/linha_01.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+
+        <div class="">
+          <div class="bg-white black border-radius px-3 py-2 m-px-3 m-py-2 box-shadow">
+            <img class="img-responsive mb-1 m-mb-1" src="assets/images/p1/desktop/imagens/frase_01.png" alt="">
+
+            <div class="bg-blue white border-radius px-2 py-2 m-px-2 m-py-2 box-shadow">
+              <p>Garantir a correta identificação do paciente a fim de reduzir a ocorrência de incidentes. </p>
+            </div>
+
+            <p class="mt-1 m-mt-1"> O primeiro passo para o cuidado seguro é a identificação adequada do paciente, devemos assegurar que o cuidado seja prestado à pessoa para a qual se destina determinado tipo de procedimento ou tratamento; devemos prevenir a ocorrência de erros ou enganos que possam gerar a ocorrência de incidentes ou até mesmo eventos adversos e, consequentemente, dano ao paciente. </p>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-2">
+        <div class="">
+          <img class="img-responsive" src="assets/images/p1/desktop/formas/linha_01.png" alt="">
+        </div>
+      </div>
+
+    </div-->
+  </div>
+
+  <div class="scroll-indicator anim-seta" ng-hide="vm.item.scrollLeft > 0">
+    <i class="fa fa-arrow-right pulse" aria-hidden="true"></i>
+  </div>
+
+  <div class="navbuttons">
+    <div class="prevBtn" ng-click="vm.game.prev()">
+      <img src="assets/images/p1/botoes/botao_voltar.png" alt="">
+    </div>
+    <div class="nextBtn" ng-click="vm.game.next()" ng-show="vm.game.screenFinished()">
+      <img src="assets/images/p1/botoes/botao_avancar.png" alt="">
+    </div>
+  </div>
+
+</div>

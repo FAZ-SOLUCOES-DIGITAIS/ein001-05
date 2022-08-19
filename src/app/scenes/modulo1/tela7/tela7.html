@@ -1,0 +1,37 @@
+<div class="tela mod1tela7" ng-swipe-up="vm.game.next()" ng-swipe-down="vm.game.prev()">
+
+  <div class="container-fluid no-padding">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-6">
+        <div class="vertical-middle white pl-3">
+          <p class="subtitle bold">A Consciência Situacional pode evitar a ocorrência de erros diagnósticos. </p>
+
+          <p class="bigtext bold">Para entender melhor...</p>
+
+          <div class="bg-white border-radius box-shadow px-2 py-2 my-1">
+            <p class="black">O artigo abaixo sugere uma revisão de casos de diagnóstico de câncer em atenção primária onde, dos 254 casos que atenderam aos critérios de inclusão no estudo, foram encontrados erros relacionados à consciência situacional em 30 dos 92 (32,6%) casos de câncer de pulmão e 56 de 167 (33,5%) casos de câncer colorretal.</p>
+          </div>
+
+          <div class="center">
+            <a href="assets/pdfs/artigo_2011.pdf" download="artigo_2011.pdf" target="_blank" rel="noopener noreferrer">
+              <img class="img-responsive block centered" src="assets/images/p1/desktop/botoes/botao_doc_02.png" alt="" style="max-height: 5rem;">
+            </a>
+            <p class="center black">Clique aqui para ler o artigo</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="navbuttons">
+    <div class="prevBtn" ng-click="vm.game.prev()">
+      <img src="assets/images/p1/botoes/botao_voltar.png" alt="">
+    </div>
+    <div class="nextBtn" ng-click="vm.game.next()" ng-show="vm.game.screenFinished()">
+      <img src="assets/images/p1/botoes/botao_avancar.png" alt="">
+    </div>
+  </div>
+
+</div>

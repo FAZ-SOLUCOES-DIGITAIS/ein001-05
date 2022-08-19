@@ -1,0 +1,164 @@
+<div class="tela intros">
+  <!--div class="menu-bg">
+    <video autoplay muted loop id="bg-video">
+      <source src="assets/images/px/bgs/video_01_1.mp4" type="video/mp4">
+    </video>
+  </div-->
+  <!--div class="full bg-white content-mobile" ng-show="intro.currentItem === 3"></div>
+  <div class="menu-bg1 content-desktop" ng-show="intro.currentItem === 3"></div-->
+
+  <div class="bg-1" ng-show="intro.currentItem === 0"></div>
+  <div class="bg-2" ng-show="intro.currentItem === 1"></div>
+  <div class="bg-3" ng-show="intro.currentItem === 2"></div>
+
+  <div class="container-fluid container-table table">
+
+    <div class="table-cell">
+
+      <div class="row nowrap" ng-show="intro.currentItem === 0">
+        <div class="col-sm-1 col-md-2 no-float middle">
+
+        </div>
+
+        <div class="col-sm-10 col-md-8 no-float middle px-3">
+          <div class="row">
+            <div class="col-sm-8 white">
+              <p>Queremos dar a você boas-vindas ao curso de </p>
+              <p class="title yellow bold">Arranjos de Pagamento.</p>
+              <p>E para começar, nós temos uma pergunta: </p>
+              <p class="bold">Você sabe o que são arranjos de pagamento? </p>
+
+              <p class="mt-2">Clique nas setas laterais.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-1 col-md-2 no-float middle">
+          <img class="img-responsive" src="assets/images/px/botoes/seta_avancar.png" style="max-width: 4rem; padding-top: 2rem; float: right;" alt="" ng-click="intro.currentItem = 1">
+        </div>
+      </div>
+
+      <div class="row nowrap" ng-show="intro.currentItem === 1">
+        <div class="col-sm-1 col-md-2 no-float middle">
+          <img class="img-responsive" src="assets/images/px/botoes/seta_avancar.png" style="max-width: 4rem; padding-top: 2rem; transform: scale(-1);" alt="" ng-click="intro.currentItem = 0">
+        </div>
+
+        <div class="col-sm-10 col-md-8 no-float middle">
+          <div class="row nowrap">
+            <div class="col-sm-2 no-float middle">
+              <img class="img-responsive" src="assets/images/px/imagens/icone_01.png" alt="">
+            </div>
+            <div class="col-sm-8 white no-float middle">
+              <p>Na prática, um arranjo de pagamento é um <b>conjunto de regras</b>, processos e tecnologias que <b>permite que um pagamento seja efetuado</b>.</p>
+              <p class="bigtext yellow semibold">Sabe quando você utiliza o seu cartão de crédito?</p>
+              <p>Então, arranjo de pagamento é isso, ou seja, ele é que permite às pessoas realizarem <b>transações de pagamento</b> de modo simples e de acordo com a lei. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-1 col-md-2 no-float middle">
+          <img class="img-responsive" src="assets/images/px/botoes/seta_avancar.png" style="max-width: 4rem; padding-top: 2rem; float: right;" alt="" ng-click="intro.currentItem = 2">
+        </div>
+      </div>
+
+      <div class="row nowrap" ng-show="intro.currentItem === 2">
+        <div class="col-sm-1 col-md-2 no-float middle">
+          <img class="img-responsive" src="assets/images/px/botoes/seta_avancar.png" style="max-width: 4rem; padding-top: 2rem; transform: scale(-1);" alt="" ng-click="intro.currentItem = 1">
+        </div>
+
+        <div class="col-sm-10 col-md-8 no-float middle">
+          <div class="row">
+            <div class="col-sm-12 white">
+              <p>Para entender melhor o que são arranjos de pagamento, neste curso você verá:</p>
+
+              <p class="semibold mt-1">1. ORIGEM E HISTÓRICO DOS CARTÕES;</p>
+              <p class="semibold">2. O PAPEL DAS ENTIDADES ENVOLVIDAS NO SISTEMA;</p>
+              <p class="semibold">3. CATEGORIZAÇÃO DOS CARTÕES;</p>
+              <p class="semibold">4. PRINCIPAIS CARACTERÍSTICAS DO CARTÃO;</p>
+              <p class="semibold">5. SOLUÇÕES DE CAPTURA;</p>
+              <p class="semibold">6. MACROFLUXOS DO SISTEMA DE CARTÕES; </p>
+              <p class="semibold">7. REGULAÇÃO;</p>
+              <p class="semibold">8. TENDÊNCIAS DO MERCADO DE MEIOS DE PAGAMENTO.</p>
+
+              <p>Vamos começar?</p>
+
+              <p class="semibold">Acesse o Menu e comece já os seus estudos!</p>
+
+              <div class="right content-desktop" style="position: relative;">
+                <div class="btn bg-white blue inline-block" ng-click="intro.continue()" style="top: -2rem;">Ir para o menu</div>
+              </div>
+              <div class="center content-mobile m-mt-2" style="position: relative;">
+                <div class="btn bg-white blue inline-block" ng-click="intro.continue()" >Ir para o menu</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--div class="col-sm-1 col-md-2 no-float middle">
+          <img class="img-responsive" src="assets/images/px/botoes/seta_avancar.png" style="max-width: 4rem; padding-top: 2rem; float: right;" alt="" ng-click="intro.currentItem = 3">
+        </div-->
+      </div>
+
+      <!--div class="row nowrap" ng-show="intro.currentItem === 3">
+        <div class="col-sm-1 col-md-1 no-float middle">
+          <img class="img-responsive" src="assets/images/px/botoes/seta_avancar.png" style="max-width: 4rem; padding-top: 2rem; transform: scale(-1);" alt="" ng-click="intro.currentItem = 2">
+        </div>
+
+        <div class="col-sm-11 col-md-11 no-float middle">
+          <div class="row nowrap">
+            <div class="col-sm-6 no-float middle blue">
+              <p class="subtitle bold">E para isso, vamos acompanhar a história de 5 pessoas diferentes e suas relações com o crédito.</p>
+
+              <div class="content-desktop" style="width: 100%; height: 25vh;"></div>
+
+              <p>Clique aqui, acesse o menu e comece o seu estudo!</p>
+
+              <div class="center mt-1">
+                <div class="btn bg-blue white mt-1 inline-block" ng-click="intro.continue()">Clique aqui e<br/>acesse o mapa</div>
+              </div>
+
+            </div>
+            <div class="col-sm-6 no-float middle m-mt-2">
+              <img class="img-responsive" src="assets/images/px/imagens/circulo_comimagens.png" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div-->
+
+      <!--div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <div class="table content-height">
+
+            <div class="table-cell blue bg-white border-radius py-3 px-3">
+
+              <p>Você já ouviu falar no termo “Mercado Financeiro”?</p>
+
+              <p class="mt-1 m-mt-1">Ele é parte importante de todo sistema que envolve as instituições bancárias do mundo.</p>
+
+              <p class="mt-1 m-mt-1">E pode ser definido como o ambiente onde se pode comprar e vender produtos financeiros. </p>
+
+              <p class="blue semititle bold mt-1 m-mt-1">Ou seja, o ambiente onde são feitas as negociações referentes a produtos e serviços que são oferecidos pelas instituições financeiras.</p>
+
+              <p class="mt-1 m-mt-1">Neste curso, você vai entender os principais conceitos sobre o Mercado Financeiro.</p>
+
+              <p>Preparamos ele especialmente para você que quer mergulhar nesse tema. </p>
+
+              <p class="bigtext bold mt-1 m-mt-1">Vamos começar? </p>
+
+              <div class="center">
+                <div class="btn bg-blue white mt-1 inline-block" ng-click="intro.continue()">Clique aqui!</div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div-->
+
+    </div>
+
+  </div>
+
+</div>

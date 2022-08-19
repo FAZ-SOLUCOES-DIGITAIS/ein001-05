@@ -1,0 +1,68 @@
+.tela.mod1tela11
+  position relative
+  min-height 100%
+  width 100%
+  height 100% /* cross-browser */
+  background url('../assets/images/p1/desktop/bgs/bg_08.png')
+  //background-attachment fixed
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  transition background 0.7s
+
+  .container-fluid
+    height 100%
+    padding 0 5rem
+
+    .row
+      height 100%
+
+    .menu-item
+      display block
+      margin-bottom 1rem
+
+      .menu-item-box
+        display inline-block
+        vertical-align middle
+        width 3rem
+        height 3rem
+        border-radius 1rem
+        background white
+        box-shadow 0 0 5px 1px rgba(0,0,0,0.5)
+        text-align center
+        margin-right 0.5rem
+
+        p
+          color #0a9d80
+          line-height 3rem
+          font-size 2rem
+          font-weight bold
+          color #0a9d80
+
+      p
+        display inline-block
+        vertical-align middle
+        color white
+        font-weight 500
+        font-size 1.2rem
+
+      &.current
+        .menu-item-box
+          background #0a9d80
+
+          p
+            color white
+
+@media screen and (orientation: portrait)
+  .tela.mod1tela11
+    background url('../assets/images/p1/desktop/bgs/bg_08.png')
+    //background-attachment fixed
+    background-position top center
+    background-repeat no-repeat
+    background-size cover
+
+    /*.container-fluid
+      .vertical-middle
+        display block
+        transform none
+        padding-top 3rem*/

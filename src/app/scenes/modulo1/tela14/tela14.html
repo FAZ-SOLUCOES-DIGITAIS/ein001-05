@@ -1,0 +1,500 @@
+<div class="tela mod1tela14" ng-swipe-up="vm.game.next()" ng-swipe-down="vm.game.prev()">
+
+  <div class="container-fluid no-padding">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="mt-2 m-mt-2">
+
+          <p class="pb-1 m-pb-1"><span class="semititle bold blue">Vamos para uma a avaliação de aprendizagem. </span>Clique nos destaques e analise o caso a seguir.</p>
+
+          <div class="menu-items center mt-1 m-mt-1">
+            <div class="mb-1 m-mb-1">
+              <div class="menu-item menu-item-1 mr-1" ng-class="{visited: vm.items[0]}" ng-click="vm.select(0)">
+                <p>Analise o caso</p>
+              </div>
+              <div class="menu-item menu-item-2 mr-1" ng-class="{visited: vm.items[1]}" ng-click="vm.select(1)">
+                <p>Evolução<br/> do paciente</p>
+              </div>
+              <div class="menu-item menu-item-3" ng-class="{visited: vm.items[2]}" ng-click="vm.select(2)">
+                <p>Avaliação de<br/> aprendizagem</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+
+              <div class="remove-animation" ng-show="vm.currentItem === -1">
+                <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2">
+                    <p class="semititle bold blue">Orientações</p>
+
+                    <ul>
+                      <li>A avaliação possui nota mínima de <b>70%</b> para aprovação.</li>
+                      <li>Você terá <b>3 tentativas</b> para a conclusão da avaliação.</li>
+                      <li>Caso não seja aprovado após 3 tentativas, deverá <b>refazer o curso</b>.</li>
+                    </ul>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="remove-animation" ng-show="vm.currentItem === 0">
+                <div class="row">
+                  <div class="col-sm-5 col-md-4 col-md-offset-1">
+                    <p>Paciente N.C.T, 75 anos, gênero biológico feminino, procura a UPA Morumbi com queixa de calafrios, febre e dor ao urinar. Após avaliação na UPA, é internada na semi-intensiva para tratamento de ITU com ROCEFIN e vigilância infeciosa. </p>
+                    <p>AP: diabetes, HAS, insuficiência coronariana – Stent, infecção urinária de repetição, lombalgia com ciática, hipertensão arterial, IRC não dialítico.</p>
+                  </div>
+
+                  <div class="col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-1">
+                    <div class="">
+                      <img class="img-responsive block centered" src="assets/images/p1/desktop/imagens/imagem_06.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="remove-animation" ng-show="vm.currentItem === 1">
+                <div class="row">
+                  <div class="col-sm-12 center">
+                    <div class="inline-block-middle mr-1 pb-6 m-pb-6 left">
+                      <p>Veja na<br/> imagem ao<br/> lado o que foi<br/> feito para<br/> a paciente.</p>
+                    </div>
+                    <div class="inline-block-middle">
+                      <img class="img-responsive block centered" src="assets/images/p1/desktop/imagens/imagem_grafico_02.png" alt="" style="max-height: 70vh;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="remove-animation" ng-show="vm.currentItem === 2">
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1">
+                    <p>Com base na sua análise, responda: </p>
+
+                    <div class="my-1 m-my-1">
+                      <div class="inline-block-middle w-5">
+                        <img class="img-responsive block centered" src="assets/images/p1/desktop/imagens/numero_01.png" alt="">
+                      </div>
+                      <div class="inline-block-middle w-90 pl-1">
+                        <p class="bold">A piora do quadro clínico com transferência para UTI, poderia ter sido evitada?</p>
+                      </div>
+                    </div>
+
+                    <div class="left pb-1 m-pb-1">
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[0].selected === 0, certo: vm.quiz[0].feedback && vm.quiz[0].answer === 0}" ng-hide="vm.quiz[0].feedback && vm.quiz[0].selected != 0" ng-click="vm.selectQuiz(0,0)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>a) Não, pois esta seria a progressão natural da doença, e independente da conduta médica a evolução clínica possivelmente teria sido a mesma.</p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[0].selected === 1, certo: vm.quiz[0].feedback && vm.quiz[0].answer === 1}" ng-hide="vm.quiz[0].feedback && vm.quiz[0].selected != 1" ng-click="vm.selectQuiz(0,1)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>b) Sim, se médico tivesse exercitado a consciência situacional e tido percepção da gravidade atual do caso e projeção das consequências de não mudar tratamento o desfecho poderia ser diferente.</p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[0].selected === 2, certo: vm.quiz[0].feedback && vm.quiz[0].answer === 2}" ng-hide="vm.quiz[0].feedback && vm.quiz[0].selected != 2" ng-click="vm.selectQuiz(0,2)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>c) Não, pois o médico plantonista tomou todas as condutas cabíveis de acordo com os sinais e sintomas que a paciente apresentava.</p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[0].selected === 3, certo: vm.quiz[0].feedback && vm.quiz[0].answer === 3}" ng-hide="vm.quiz[0].feedback && vm.quiz[0].selected != 3" ng-click="vm.selectQuiz(0,3)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>d) Sim, poderia ter sido evitado, se a paciente tivesse sido alocada diretamente na UTI, onde ela teria um cuidado intensivo e direcionado.</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="feedback mt-1 m-mt-1" ng-show="vm.quiz[0].feedback">
+                      <div class="wrong" ng-show="vm.quiz[0].selected === 0">
+                        <p class="semititle bold">Resposta incorreta. O caso acima poderia ter sido evitado.</p>
+                      </div>
+                      <div class="correct" ng-show="vm.quiz[0].selected === 1">
+                        <p class="semititle bold">Resposta correta. Parabéns! Se o médico tivesse exercitado a consciência situacional, entendido que a paciente não estava respondendo à terapêutica proposta, poderia ter se incomodado com a situação e tomado a decisão de checar a cultura e alterar o antibiótico de forma antecipada. </p>
+                      </div>
+                      <div class="wrong" ng-show="vm.quiz[0].selected === 2">
+                        <p class="semititle bold">Resposta incorreta. O caso acima poderia ter sido evitado.</p>
+                      </div>
+                      <div class="wrong" ng-show="vm.quiz[0].selected === 3">
+                        <p class="semititle bold">Resposta incorreta. Não foi por uma questão de alocação que a paciente teve piora do quadro clínico.</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                </div>
+
+                <div class="mt-1 m-mt-1 center" ng-show="vm.quiz[0].feedback">
+                  <div class="inline-block-middle bg-blue white border-radius" style="padding: 0.4rem 2rem;" ng-click="vm.select(3)">
+                    <p>Próximo</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="remove-animation" ng-show="vm.currentItem === 3">
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1">
+                    <p>Com base na sua análise, responda: </p>
+
+                    <div class="my-1 m-my-1">
+                      <div class="inline-block-middle w-5">
+                        <img class="img-responsive block centered" src="assets/images/p1/desktop/imagens/numero_02.png" alt="">
+                      </div>
+                      <div class="inline-block-middle w-90 pl-1">
+                        <p class="bold">Ao chegar na UTI, devido à evolução do caso, o plantonista opta em passar um cateter venoso central na paciente. Qual ferramenta do HCRM Einstein você pode utilizar para garantir que o procedimento seja o mais seguro possível para a paciente?</p>
+                      </div>
+                    </div>
+
+                    <div class="left pb-1 m-pb-1">
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[1].selected === 0, certo: vm.quiz[1].feedback && vm.quiz[1].answer === 0}" ng-hide="vm.quiz[1].feedback && vm.quiz[1].selected != 0" ng-click="vm.selectQuiz(1,0)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>a) SBAR, ferramenta de comunicação efetiva, indicada para situações de urgência e emergência.</p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[1].selected === 1, certo: vm.quiz[1].feedback && vm.quiz[1].answer === 1}" ng-hide="vm.quiz[1].feedback && vm.quiz[1].selected != 1" ng-click="vm.selectQuiz(1,1)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>b) STEP, ferramenta indicada para ser aplicada para ampliar a consciência situacional.</p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[1].selected === 2, certo: vm.quiz[1].feedback && vm.quiz[1].answer === 2}" ng-hide="vm.quiz[1].feedback && vm.quiz[1].selected != 2" ng-click="vm.selectQuiz(1,2)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>c) <i>Teach Back</i>, ferramenta indicada para se garantir uma comunicação de alça fechada com o paciente.</p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[1].selected === 3, certo: vm.quiz[1].feedback && vm.quiz[1].answer === 3}" ng-hide="vm.quiz[1].feedback && vm.quiz[1].selected != 3" ng-click="vm.selectQuiz(1,3)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>d) IPASS, ferramenta indicada para uma passagem de plantão efetiva.</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="feedback mt-1 m-mt-1" ng-show="vm.quiz[1].feedback">
+                      <div class="wrong" ng-show="vm.quiz[1].selected === 0">
+                        <p class="semititle bold">Resposta incorreta. SBAR é uma ferramenta de comunicação, indicada para estruturar a comunicação em situações de urgência e emergência.</p>
+                      </div>
+                      <div class="correct" ng-show="vm.quiz[1].selected === 1">
+                        <p class="semititle bold">Resposta correta. STEP é uma ferramenta, que se aplicada antes da realização de procedimentos, pode ampliar a consciência situacional e evitar eventos adversos.</p>
+                      </div>
+                      <div class="wrong" ng-show="vm.quiz[1].selected === 2">
+                        <p class="semititle bold">Resposta incorreta. Teach Bach é uma ferramenta de comunicação usada para checar o entendimento do paciente a cerca das orientações dadas a ele.</p>
+                      </div>
+                      <div class="wrong" ng-show="vm.quiz[1].selected === 3">
+                        <p class="semititle bold">Resposta incorreta. IPASS é uma ferramenta de comunicação indicada para a padronização da transferência de cuidado (passagem de plantão).</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                </div>
+
+                <div class="mt-1 m-mt-1 center" ng-show="vm.quiz[1].feedback">
+                  <div class="inline-block-middle bg-blue white border-radius" style="padding: 0.4rem 2rem;" ng-click="vm.select(4)">
+                    <p>Próximo</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="remove-animation" ng-show="vm.currentItem === 4">
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1">
+                    <p>Com base na sua análise, responda: </p>
+
+                    <div class="my-1 m-my-1">
+                      <div class="inline-block-middle w-5">
+                        <img class="img-responsive block centered" src="assets/images/p1/desktop/imagens/numero_03.png" alt="">
+                      </div>
+                      <div class="inline-block-middle w-90 pl-1">
+                        <p class="bold">Uma  das indicações da ferramenta STEP é o seu uso antes da realização de procedimentos, para ampliar a consciência situacional.</p>
+                      </div>
+                      <p>S: <i>Status</i> do Paciente &nbsp; T (<i>Team</i>): Membros da Equipe &nbsp; E (<i>Environment</i>): Ambiente &nbsp; P: Progresso em direção à meta</p>
+                      <p class="bold">Sobre a aplicação desta ferramenta no caso clínico (antes da passagem do cateter venoso central), é correto afirmar:</p>
+                    </div>
+
+                    <div class="left pb-1 m-pb-1">
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[2].selected === 0, certo: vm.quiz[2].feedback && vm.quiz[2].answer === 0}" ng-hide="vm.quiz[2].feedback && vm.quiz[2].selected != 0" ng-click="vm.selectQuiz(2,0)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>a) Deve-se avaliar o <i>status</i> da paciente e analisar os seguintes questionamentos:<br/>
+                          Qual é a história clínica desta paciente? Será que esta paciente já passou cateter central alguma vez? Houve alguma intercorrência? Quais medicamentos esta paciente está usando? Alguns destes medicamentos pode contraindicar essa passagem ou preciso ficar atento a complicações?</p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[2].selected === 1, certo: vm.quiz[2].feedback && vm.quiz[2].answer === 1}" ng-hide="vm.quiz[2].feedback && vm.quiz[2].selected != 1" ng-click="vm.selectQuiz(2,1)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>b) Deve-se ficar atento ao membro da equipe que irá passar o cateter, e lembre-se de pedir e oferecer ajuda sempre que necessário.  </p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[2].selected === 2, certo: vm.quiz[2].feedback && vm.quiz[2].answer === 2}" ng-hide="vm.quiz[2].feedback && vm.quiz[2].selected != 2" ng-click="vm.selectQuiz(2,2)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>c) Antes de iniciar o procedimento deve-se ficar atento ao ambiente, analisar se todos os materiais que podem ser necessários estão disponíveis, a fim de evitar intercorrências.  </p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[2].selected === 3, certo: vm.quiz[2].feedback && vm.quiz[2].answer === 3}" ng-hide="vm.quiz[2].feedback && vm.quiz[2].selected != 3" ng-click="vm.selectQuiz(2,3)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>d) Todas as alternativas estão corretas.</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="feedback mt-1 m-mt-1" ng-show="vm.quiz[2].feedback">
+                      <div class="wrong" ng-show="vm.quiz[2].selected === 0">
+                        <p class="semititle bold">É importante analisar o <i>status</i> do paciente, porém, também se faz necessário avaliar os outros aspectos da ferramenta.</p>
+                      </div>
+                      <div class="wrong" ng-show="vm.quiz[2].selected === 1">
+                        <p class="semititle bold">É importante analisar os membros da equipe, porém, também se faz necessário avaliar os outros aspectos da ferramenta. </p>
+                      </div>
+                      <div class="wrong" ng-show="vm.quiz[2].selected === 2">
+                        <p class="semititle bold">É importante analisar o ambiente, porém, também se faz necessário avaliar os outros aspectos da ferramenta.</p>
+                      </div>
+                      <div class="correct" ng-show="vm.quiz[2].selected === 3">
+                        <p class="semititle bold">Resposta correta. É importante analisar todos os itens da ferramenta STEP antes de realizar procedimentos.</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                </div>
+
+                <div class="mt-1 m-mt-1 center" ng-show="vm.quiz[2].feedback">
+                  <div class="inline-block-middle bg-blue white border-radius" style="padding: 0.4rem 2rem;" ng-click="vm.select(5)">
+                    <p>Próximo</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="remove-animation" ng-show="vm.currentItem === 5">
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1">
+                    <p>Com base na sua análise, responda: </p>
+
+                    <div class="my-1 m-my-1">
+                      <div class="inline-block-middle w-5">
+                        <img class="img-responsive block centered" src="assets/images/p1/desktop/imagens/numero_04.png" alt="">
+                      </div>
+                      <div class="inline-block-middle w-90 pl-1">
+                        <p class="bold">Uma das condutas esperadas de times de alta performance é a realização de uma autoavaliação antes da execução de procedimentos e/ou atividades que envolvam a segurança do paciente e profissional. Qual ferramenta do HCRM Einstein você pode utilizar para fazer sua autoavaliação?</p>
+                      </div>
+                    </div>
+
+                    <div class="left pb-1 m-pb-1">
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[3].selected === 0, certo: vm.quiz[3].feedback && vm.quiz[3].answer === 0}" ng-hide="vm.quiz[3].feedback && vm.quiz[3].selected != 0" ng-click="vm.selectQuiz(3,0)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>a) STEP, ferramenta indicada para ser aplicada para ampliar a consciência situacional.</p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[3].selected === 1, certo: vm.quiz[3].feedback && vm.quiz[3].answer === 1}" ng-hide="vm.quiz[3].feedback && vm.quiz[3].selected != 1" ng-click="vm.selectQuiz(3,1)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>b) <i>I'm Safe</i>, ferramenta indicada para análise de elementos que afetam o desempenho da equipe.</p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[3].selected === 2, certo: vm.quiz[3].feedback && vm.quiz[3].answer === 2}" ng-hide="vm.quiz[3].feedback && vm.quiz[3].selected != 2" ng-click="vm.selectQuiz(3,2)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>c) SBAR, ferramenta de comunicação efetiva, indicada para situações de urgência e emergência. </p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[3].selected === 3, certo: vm.quiz[3].feedback && vm.quiz[3].answer === 3}" ng-hide="vm.quiz[3].feedback && vm.quiz[3].selected != 3" ng-click="vm.selectQuiz(3,3)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>D) iPASS, ferramenta indicada para uma passagem de plantão efetiva.</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="feedback mt-1 m-mt-1" ng-show="vm.quiz[3].feedback">
+                      <div class="wrong" ng-show="vm.quiz[3].selected === 0">
+                        <p class="semititle bold">Resposta incorreta. STEP é uma ferramenta que amplia a consciência situacional, mas não é a ferramenta indicada para a autoavaliação.</p>
+                      </div>
+                      <div class="correct" ng-show="vm.quiz[3].selected === 1">
+                        <p class="semititle bold">Resposta correta. A ferramenta I’m Safe te ajudará a ter consciência dos elementos que afetam o seu desempenho e permitir mitigá-los e desse modo, aumentar a segurança do paciente.</p>
+                      </div>
+                      <div class="wrong" ng-show="vm.quiz[3].selected === 2">
+                        <p class="semititle bold">Resposta incorreta. SBAR é uma ferramenta para comunicação efetiva e não é indicada para autoavaliação.</p>
+                      </div>
+                      <div class="wrong" ng-show="vm.quiz[3].selected === 3">
+                        <p class="semititle bold">Resposta incorreta. IPASS é uma ferramenta para passagem de plantão e não é indicada para autoavaliação.</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                </div>
+
+                <div class="mt-1 m-mt-1 center" ng-show="vm.quiz[3].feedback">
+                  <div class="inline-block-middle bg-blue white border-radius" style="padding: 0.4rem 2rem;" ng-click="vm.select(6)">
+                    <p>Próximo</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="remove-animation" ng-show="vm.currentItem === 6">
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1">
+                    <p>Com base na sua análise, responda: </p>
+
+                    <div class="my-1 m-my-1">
+                      <div class="inline-block-middle w-5">
+                        <img class="img-responsive block centered" src="assets/images/p1/desktop/imagens/numero_05.png" alt="">
+                      </div>
+                      <div class="inline-block-middle w-90 pl-1">
+                        <p class="bold">O que você pode avaliar com uso da ferramenta I'm Safe?</p>
+                      </div>
+                    </div>
+
+                    <div class="left pb-1 m-pb-1">
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[4].selected === 0, certo: vm.quiz[4].feedback && vm.quiz[4].answer === 0}" ng-hide="vm.quiz[4].feedback && vm.quiz[4].selected != 0" ng-click="vm.selectQuiz(4,0)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>a) Questões psicológicas e pessoais que podem afetar a capacidade de executar atividades implicando na percepção de riscos e segurança do paciente.</p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[4].selected === 1, certo: vm.quiz[4].feedback && vm.quiz[4].answer === 1}" ng-hide="vm.quiz[4].feedback && vm.quiz[4].selected != 1" ng-click="vm.selectQuiz(4,1)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>b) Questões relacionadas ao ambiente de trabalho que podem afetar na capacidade de relacionamento interpessoal da equipe.</p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[4].selected === 2, certo: vm.quiz[4].feedback && vm.quiz[4].answer === 2}" ng-hide="vm.quiz[4].feedback && vm.quiz[4].selected != 2" ng-click="vm.selectQuiz(4,2)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>c) Questões ambientais que podem afetar na capacidade de executar suas atividades e o relacionamento com a equipe médica. </p>
+                        </div>
+                      </div>
+
+                      <div class="answer-item border-radius box-shadow mb-1" style="padding: 0.4rem 1rem;" ng-class="{selected: vm.quiz[4].selected === 3, certo: vm.quiz[4].feedback && vm.quiz[4].answer === 3}" ng-hide="vm.quiz[4].feedback && vm.quiz[4].selected != 3" ng-click="vm.selectQuiz(4,3)">
+                        <div class="inline-block-middle w-5">
+                          <div class="box-selection"></div>
+                        </div>
+                        <div class="inline-block-middle w-90 pl-1">
+                          <p>d) Questões relacionadas à comunicação entre a equipe e membros de outras áreas de atuação que podem afetar a capacidade de raciocínio clínico e tomada de decisão.</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="feedback mt-1 m-mt-1" ng-show="vm.quiz[4].feedback">
+                      <div class="correct" ng-show="vm.quiz[4].selected === 0">
+                        <p class="semititle bold"> Resposta correta. A ferramenta <i>I’m Safe</i> possui questionamentos que envolvem questões psicológicas e pessoais. Caso algum dos itens do checklist esteja presente, lembre-se de pedir ajuda a um colega de trabalho.</p>
+                      </div>
+                      <div class="wrong" ng-show="vm.quiz[4].selected === 1">
+                        <p class="semititle bold">Resposta incorreta. A ferramenta <i>I’m Safe</i> não avalia questões do ambiente.</p>
+                      </div>
+                      <div class="wrong" ng-show="vm.quiz[4].selected === 2">
+                        <p class="semititle bold">Resposta incorreta. A ferramenta <i>I’m Safe</i> não avalia questões do ambiente.</p>
+                      </div>
+                      <div class="wrong" ng-show="vm.quiz[4].selected === 3">
+                        <p class="semititle bold">Resposta incorreta. A ferramenta <i>I’m Safe</i> não avalia a comunicação entre as equipes.</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                </div>
+
+                <!--div class="mt-1 m-mt-1 center" ng-show="vm.quiz[0].feedback">
+                  <div class="inline-block-middle bg-blue white border-radius" style="padding: 0.4rem 2rem;" ng-click="vm.select(3)">
+                    <p>Próximo</p>
+                  </div>
+                </div-->
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbuttons">
+    <div class="prevBtn" ng-click="vm.game.prev()">
+      <img src="assets/images/p1/botoes/botao_voltar.png" alt="">
+    </div>
+    <div class="nextBtn" ng-click="vm.game.next()" ng-show="vm.game.screenFinished()">
+      <img src="assets/images/p1/botoes/botao_avancar.png" alt="">
+    </div>
+  </div>
+
+</div>

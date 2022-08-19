@@ -1,0 +1,43 @@
+<div class="tela mod1tela3 {{vm.currentClass}}" ng-swipe-up="vm.game.next()" ng-swipe-down="vm.game.prev()">
+
+  <div class="container-fluid no-padding">
+    <div class="row">
+      <div class="col-sm-4 content-desktop">
+        <div class="vertical-middle">
+          <img class="img-responsive block centered" src="assets/images/p1/desktop/imagens/imagem_01.png" alt="" style="max-height: 85vh;">
+        </div>
+      </div>
+      <div class="col-xs-6 col-xs-offset-6 col-sm-4 col-sm-offset-4">
+        <div class="vertical-middle">
+
+          <div class="table bg-white border-radius black px-1 py-1 m-px-1 m-px-1" style="min-height: 7rem;">
+            <p class="table-cell">A percepção está relacionada à capacidade de um indivíduo em perceber um novo perigo, ou seja, ver, ouvir ou sentir.</p>
+          </div>
+
+          <div class="table bg-white border-radius black px-1 py-1 m-px-1 m-px-1 mt-1 m-mt-0 pb-0" style="min-height: 7rem;">
+            <p class="table-cell">Compreender é entender o que a informação significa.</p>
+          </div>
+
+          <div class="table bg-white border-radius black px-1 py-1 m-px-1 m-px-1 mt-1 m-mt-0 pb-0" style="min-height: 7rem;">
+            <p class="table-cell">A projeção se refere ao que pode acontecer no ambiente. É a capacidade de antecipação frente a possíveis consequências dos riscos identificados.</p>
+          </div>
+
+          <div class="table bg-white border-radius black px-1 py-1 m-px-1 m-px-1 mt-1 m-mt-0 pb-0" style="min-height: 7rem;">
+            <p class="table-cell">E a decisão é a capacidade de tomar uma ação para evitar que o dano aconteça diante de uma situação de risco.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbuttons">
+    <div class="prevBtn" ng-click="vm.game.prev()">
+      <img src="assets/images/p1/botoes/botao_voltar.png" alt="">
+    </div>
+    <div class="nextBtn" ng-click="vm.game.next()" ng-show="vm.game.screenFinished()">
+      <img src="assets/images/p1/botoes/botao_avancar.png" alt="">
+    </div>
+  </div>
+
+</div>

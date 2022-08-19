@@ -1,0 +1,186 @@
+.tela.mod1tela5
+  position relative
+  min-height 100%
+  width 100%
+  height 100% /* cross-browser */
+  background url('../assets/images/p1/desktop/bgs/bg_04.png')
+  //background-attachment fixed
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  transition background 0.7s
+
+  .container-fluid
+    height 100%
+    padding 0 5rem
+
+    .row
+      height 100%
+
+    .menu-item
+      display table
+      width 100%
+      text-align center
+      border-radius 2rem
+      min-height 3rem
+      margin-bottom 1rem
+      color white
+      font-weight 500
+      background #017b95
+
+      p
+        display table-cell
+        vertical-align middle
+
+      &.menu-item-2
+        background #178e88
+
+      &.visited
+        background #8bd65f
+        color #005c70
+        font-weight bold
+
+    .verdadeiro
+      display table
+      width 100%
+      text-align center
+      border-radius 2rem
+      min-height 3rem
+      margin-bottom 1rem
+      color white
+      font-weight 500
+      background rgba(54,193,110,0.5)
+
+      &.selected
+        background rgba(54,193,110,1)
+
+      p
+        display table-cell
+        vertical-align middle
+
+    .falso
+      display table
+      width 100%
+      text-align center
+      border-radius 2rem
+      min-height 3rem
+      margin-bottom 1rem
+      color white
+      font-weight 500
+      background rgba(227,75,74,0.5)
+
+      &.selected
+        background rgba(227,75,74,1)
+
+      p
+        display table-cell
+        vertical-align middle
+
+    .correct
+      border-left 5px solid rgba(54,193,110,1)
+      padding-left 1rem
+      margin-top 1rem
+
+      p
+        color rgba(54,193,110,1)
+
+    .wrong
+      border-left 5px solid rgba(227,75,74,1)
+      padding-left 1rem
+      margin-top 1rem
+
+      p
+        color rgba(227,75,74,1)
+
+
+    .pira
+      position relative
+      padding 1rem
+      display inline-table
+      background white
+      border-radius 1.5rem
+      box-shadow 4px 4px 8px 1px rgba(0,0,0,0.5)
+      margin-bottom 0.6rem
+
+      p
+        font-size 0.8rem
+        font-weight 500
+        display table-cell
+        vertical-align bottom
+
+      &.pira-1
+        margin-top 1rem
+
+        &:after
+          content ""
+          position absolute
+          left 0
+          bottom 1rem
+          width 100%
+          height 1.5rem
+          background url('../assets/images/p1/desktop/formas/forma_linha_funil_01.png')
+          background-repeat no-repeat
+          background-position right top
+          background-size 100% 100%
+
+      &.pira-2
+        transform translateX(-2.5rem)
+        width calc(100% + 2.5rem)
+
+        &:after
+          content ""
+          position absolute
+          left 0
+          bottom 1rem
+          width 100%
+          height 1.5rem
+          background url('../assets/images/p1/desktop/formas/forma_linha_funil_02.png')
+          background-repeat no-repeat
+          background-position right top
+          background-size 100% 100%
+
+      &.pira-3
+        transform translateX(-4.5rem)
+        width calc(100% + 4.5rem)
+
+        &:after
+          content ""
+          position absolute
+          left 0
+          bottom 1rem
+          width 100%
+          height 1.5rem
+          background url('../assets/images/p1/desktop/formas/forma_linha_funil_03.png')
+          background-repeat no-repeat
+          background-position right top
+          background-size 100% 100%
+
+      &.pira-4
+        transform translateX(-7rem)
+        width calc(100% + 7rem)
+
+        &:after
+          content ""
+          position absolute
+          left 0
+          bottom 1rem
+          width 100%
+          height 1.5rem
+          background url('../assets/images/p1/desktop/formas/forma_linha_funil_04.png')
+          background-repeat no-repeat
+          background-position right top
+          background-size 100% 100%
+
+@media screen and (orientation: portrait)
+  .tela.mod1tela5
+    background url('../assets/images/p1/desktop/bgs/bg_04.png')
+    //background-attachment fixed
+    background-position top center
+    background-repeat no-repeat
+    background-size cover
+
+    /*.container-fluid
+      .vertical-middle
+        display block
+        transform none
+        padding-top 3rem*/

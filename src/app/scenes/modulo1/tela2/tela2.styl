@@ -1,0 +1,64 @@
+.tela.mod1tela2
+  position relative
+  min-height 100%
+  width 100%
+  height 100% /* cross-browser */
+  background url('../assets/images/p1/desktop/bgs/bg_02.png')
+  //background-attachment fixed
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+
+  .container-fluid
+    height 100%
+    padding 0 5rem
+
+    .row
+      height 100%
+
+    .quote
+      padding 1rem 2.6rem
+      margin-bottom 1rem
+      position relative
+      z-index 0
+
+      &:before
+        content ""
+        position absolute
+        left 0
+        top 0
+        width 2.6rem
+        height 2.6rem
+        background url('../assets/images/p1/desktop/formas/forma_aspas_02.png')
+        background-position center top
+        background-repeat no-repeat
+        background-size contain
+        z-index -1
+
+      &:after
+        content ""
+        position absolute
+        right 0
+        bottom 0
+        width 2.6rem
+        height 2.6rem
+        background url('../assets/images/p1/desktop/formas/forma_aspas_01.png')
+        background-position center top
+        background-repeat no-repeat
+        background-size contain
+        z-index -1
+
+@media screen and (orientation: portrait)
+  .tela.mod1tela2
+    background url('../assets/images/p1/desktop/bgs/bg_02.png')
+    //background-attachment fixed
+    background-position top center
+    background-repeat no-repeat
+    background-size cover
+    background-color white
+
+    .container-fluid
+      .vertical-middle
+        display block
+        transform none
+        padding-top 3rem

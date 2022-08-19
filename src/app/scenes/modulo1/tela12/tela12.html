@@ -1,0 +1,41 @@
+<div class="tela mod1tela12" ng-swipe-up="vm.game.next()" ng-swipe-down="vm.game.prev()">
+
+  <div class="container-fluid no-padding">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="vertical-middle white">
+
+          <div class="bg-blue border-radius box-shadow px-2 py-2 my-1">
+            <p class="bigtext bold mb-1">Caso algum dos itens do checklist I’m Safe esteja presente, sua consciência situacional poderá ser afetada, neste caso, sinalize a um colega ou gestor e peça ajuda. </p>
+
+            <p>Ter consciência dos elementos que afetam seu desempenho permite mitigá-los e contribui tanto para sua segurança quanto para segurança do paciente.</p>
+
+            <p class="semititle bold">Como saber se atingi um bom nível de consciência situacional?</p>
+
+            <ul>
+              <li>Me antecipo aos eventos e prevejo os fatos.</li>
+              <li>Detecto possibilidades de erros e os gerencio.</li>
+              <li>Me sinto no controle da situação.</li>
+            </ul>
+
+            <p>Um bom exemplo de uso da consciência situacional é quando, na sua percepção, você projeta uma potencial piora no quadro clínico do paciente.</p>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="navbuttons">
+    <div class="prevBtn" ng-click="vm.game.prev()">
+      <img src="assets/images/p1/botoes/botao_voltar.png" alt="">
+    </div>
+    <div class="nextBtn" ng-click="vm.game.next()" ng-show="vm.game.screenFinished()">
+      <img src="assets/images/p1/botoes/botao_avancar.png" alt="">
+    </div>
+  </div>
+
+</div>

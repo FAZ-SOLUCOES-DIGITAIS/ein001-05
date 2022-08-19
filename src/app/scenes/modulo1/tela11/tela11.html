@@ -1,0 +1,128 @@
+<div class="tela mod1tela11" ng-swipe-up="vm.game.next()" ng-swipe-down="vm.game.prev()">
+
+  <div class="container-fluid no-padding">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="vertical-middle">
+
+          <p class="semititle white bold">Outra ferramenta que você também pode utilizar é a ferramenta: <i>I’m Safe</i> (Do inglês: Estou seguro?). </p>
+
+          <p class="white pb-1 m-pb-1">Esta ferramenta sugere uma lista de itens a serem checados. Veja como realizar a autoavaliação utilizando a ferramenta <i>I'm Safe</i>:</p>
+
+          <div class="mt-1 m-mt-1">
+
+            <div class="row">
+
+              <div class="col-sm-3 content-desktop">
+                <img class="img-responsive block centered" src="assets/images/p1/desktop/imagens/imagem_05.png" alt="" style="max-height: 65vh;">
+              </div>
+
+              <div class="col-sm-5">
+                <p class="white">Clique e veja como fazer a autoavaliação.</p>
+
+                <div class="inline-block-middle">
+                  <div class="menu-item" ng-class="{current: vm.currentItem === 0}" ng-click="vm.select(0)">
+                    <div class="menu-item-box">
+                      <p>I</p>
+                    </div>
+                    <p> = Illness</p>
+                  </div>
+                  <div class="menu-item" ng-class="{current: vm.currentItem === 1}" ng-click="vm.select(1)">
+                    <div class="menu-item-box">
+                      <p>M</p>
+                    </div>
+                    <p> = Medication</p>
+                  </div>
+                  <div class="menu-item" ng-class="{current: vm.currentItem === 2}" ng-click="vm.select(2)">
+                    <div class="menu-item-box">
+                      <p>S</p>
+                    </div>
+                    <p> = Stress</p>
+                  </div>
+                  <div class="menu-item" ng-class="{current: vm.currentItem === 3}" ng-click="vm.select(3)">
+                    <div class="menu-item-box">
+                      <p>A</p>
+                    </div>
+                    <p> = Alcohol and drugs</p>
+                  </div>
+                  <div class="menu-item" ng-class="{current: vm.currentItem === 4}" ng-click="vm.select(4)">
+                    <div class="menu-item-box">
+                      <p>F</p>
+                    </div>
+                    <p> = Fatigue</p>
+                  </div>
+                  <div class="menu-item" ng-class="{current: vm.currentItem === 5}" ng-click="vm.select(5)">
+                    <div class="menu-item-box">
+                      <p>E</p>
+                    </div>
+                    <p> = Eating and Elimination</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+
+                <div class="remove-animation mt-0" ng-show="vm.currentItem === 0">
+                  <div class="bg-green white border-radius box-shadow px-2 py-1">
+                    <p class="semititle bold">Doença: </p>
+                    <p>Estou me sentindo mal ao ponto de não cumprir minhas atividades de trabalho?</p>
+                  </div>
+                </div>
+
+                <div class="remove-animation mt-2" ng-show="vm.currentItem === 1">
+                  <div class="bg-green white border-radius box-shadow px-2 py-1">
+                    <p class="semititle bold">Medicação: </p>
+                    <p>A medicação que uso está afetando minha capacidade de manter a consciência situacional e desempenhar minhas funções?</p>
+                  </div>
+                </div>
+
+                <div class="remove-animation mt-4" ng-show="vm.currentItem === 2">
+                  <div class="bg-green white border-radius box-shadow px-2 py-1">
+                    <p class="semititle bold">Estresse: </p>
+                    <p>Há um evento em minha vida ou uma situação no trabalho, que esteja prejudicando minha capacidade de focar e desempenhar minhas atividades?</p>
+                  </div>
+                </div>
+
+                <div class="remove-animation mt-6" ng-show="vm.currentItem === 3">
+                  <div class="bg-green white border-radius box-shadow px-2 py-1">
+                    <p class="semititle bold">Álcool e drogas: </p>
+                    <p>Estou sob efeito de álcool ou drogas? </p>
+                  </div>
+                </div>
+
+                <div class="remove-animation mt-8" ng-show="vm.currentItem === 4">
+                  <div class="bg-green white border-radius box-shadow px-2 py-1">
+                    <p class="semititle bold">Fadiga: </p>
+                    <p>Estou tão cansado a ponto de não conseguir seguir com segurança as minhas atividades?</p>
+                  </div>
+                </div>
+
+                <div class="remove-animation mt-10" ng-show="vm.currentItem === 5">
+                  <div class="bg-green white border-radius box-shadow px-2 py-1">
+                    <p class="semititle bold">Fome e vontade de ir ao banheiro:</p>
+                    <p>Quanto tempo faz desde que eu me alimentei a última vez? Estou com fome ou precisando ir ao banheiro? O fato de eu não atender as minhas necessidades básicas irá atrapalhar as minhas atividades?</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbuttons">
+    <div class="prevBtn" ng-click="vm.game.prev()">
+      <img src="assets/images/p1/botoes/botao_voltar.png" alt="">
+    </div>
+    <div class="nextBtn" ng-click="vm.game.next()" ng-show="vm.game.screenFinished()">
+      <img src="assets/images/p1/botoes/botao_avancar.png" alt="">
+    </div>
+  </div>
+
+</div>

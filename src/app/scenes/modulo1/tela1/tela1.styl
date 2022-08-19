@@ -1,0 +1,55 @@
+.tela.mod1tela1
+  position relative
+  min-height 100%
+  width 100%
+  height 100% /* cross-browser */
+  background url('../assets/images/p1/desktop/bgs/bg_01.png')
+  //background-attachment fixed
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+
+  &:before
+    content ""
+    position absolute
+    left calc(45%)
+    top 0
+    width calc(55%)
+    height 100%
+    background url('../assets/images/p1/desktop/bgs/bg_01_pt_02.png')
+    background-position center top
+    background-repeat no-repeat
+    background-size cover
+
+  .container-fluid
+    height 100%
+    padding 0 5rem
+
+    .row
+      height 100%
+
+@media screen and (orientation: portrait)
+  .tela.mod1tela1
+    background url('../assets/images/p1/desktop/bgs/bg_01_pt_02.png')
+    //background-attachment fixed
+    background-position top center
+    background-repeat no-repeat
+    background-size 100% 120%
+
+    &:before
+      content ""
+      position absolute
+      left calc(0%)
+      top 70%
+      width calc(100%)
+      height 30%
+      background url('../assets/images/p1/desktop/bgs/bg_01.png')
+      background-position left top
+      background-repeat no-repeat
+      background-size cover
+
+    .container-fluid
+      .vertical-middle
+        display block
+        transform none
+        padding-top 3rem

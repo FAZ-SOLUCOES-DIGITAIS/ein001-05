@@ -1,0 +1,183 @@
+<div class="tela mod1tela5" ng-swipe-up="vm.game.next()" ng-swipe-down="vm.game.prev()">
+
+  <div class="container-fluid no-padding">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="vertical-middle">
+
+          <img src="assets/images/p1/desktop/imagens/frase_03.png" alt="" style="max-height: 2.5rem;">
+
+          <p class="pb-1 m-pb-1 bold">Clique nos destaques para entender caso.</p>
+
+          <div class="mt-1 m-mt-1">
+            <div class="w-18 inline-block-middle">
+              <div class="menu-item menu-item-1" ng-class="{visited: vm.items[0]}" ng-click="vm.select(0)">
+                <p>O caso</p>
+              </div>
+              <div class="menu-item menu-item-2" ng-class="{visited: vm.items[1]}" ng-click="vm.select(1)">
+                <p>Evolução</p>
+              </div>
+              <div class="menu-item menu-item-1" ng-class="{visited: vm.items[1]}" ng-click="vm.select(1)">
+                <p>Desfecho</p>
+              </div>
+              <div class="menu-item menu-item-2" ng-class="{visited: vm.items[3]}" ng-click="vm.select(3)">
+                <p>Pratique</p>
+              </div>
+              <div class="menu-item menu-item-1" ng-class="{visited: vm.items[4]}" ng-click="vm.select(4)">
+                <p>Consciência<br/>situacional do caso</p>
+              </div>
+              <div class="menu-item menu-item-2" ng-class="{visited: vm.items[5]}" ng-click="vm.select(5)">
+                <p>Conclusão</p>
+              </div>
+            </div>
+
+
+            <div class="w-60 inline-block-middle" style="margin-left: 10vw;">
+              <div class="remove-animation" ng-show="vm.currentItem === 0">
+                <p>Paciente N.C.T, 75 anos, gênero biológico feminino, procura a UPA com queixa de calafrios, febre e disúria há 2 dias.</p>
+                <p>Após avaliação na UPA, ela é internada na semi-intensiva para tratamento de ITU com Rocefin e vigilância infecciosa. </p>
+                <p><b>AP:</b> diabetes, HAS, insuficiência coronariana - Stent, infecção urinária de repetição, lombalgia com ciática, hipertensão arterial, IRC não dialítico.</p>
+
+                <div class="">
+                  <img class="img-responsive block centered" src="assets/images/p1/desktop/imagens/imagem_04.png" alt="">
+                </div>
+              </div>
+
+              <div class="remove-animation" ng-show="vm.currentItem === 1">
+                <p>Veja abaixo o que foi realizado para a paciente.</p>
+
+                <div class="">
+                  <img class="img-responsive block centered" src="assets/images/p1/desktop/imagens/imagem_grafico_02.png" alt="">
+                </div>
+              </div>
+
+              <div class="remove-animation" ng-show="vm.currentItem === 2">
+                <p>Paciente seguiu internada por mais 10 dias, precisando de uma terceira abordagem cirúrgica antes de ter alta.</p>
+
+                <div class="">
+                  <img class="img-responsive block centered" src="assets/images/p1/desktop/imagens/imagem_03.png" alt="">
+                </div>
+              </div>
+
+              <div class="remove-animation" ng-show="vm.currentItem === 3">
+                <div class="w-100">
+
+                  <p>Analisando a situação, como você entende que o caso foi conduzido? Assinale verdadeiro ou falso para a sentença abaixo.</p>
+
+                  <div class="bg-white border-radius box-shadow px-1 py-1 m-px-1 m-px-1 my-1 m-my-1">
+                    <p>Neste caso, o médico teve a parcial do problema: checou cultura positiva para germe resistente, porém não percebeu os sinais de sepse e que o antibiótico não era adequado, e as possíveis consequências de um atraso em iniciar antibiótico correto. Tal fato causou o atraso de sua decisão. Além disso, uma vez que antibiótico foi prescrito, possivelmente não comunicou a urgência à sua equipe, visto o atraso na infusão do medicamento.</p>
+                  </div>
+
+                </div>
+
+                <div class="w-60">
+
+                  <div class="center">
+                    <div class="inline-block-middle w-46">
+                      <div class="verdadeiro box-shadow" ng-class="{selected: vm.quiz[0].selected === 0}" ng-click="vm.selectQuiz(0,0)">
+                        <p>Verdadeiro</p>
+                      </div>
+                    </div>
+                    <div class="inline-block-middle w-46 ml-1">
+                      <div class="falso box-shadow" ng-class="{selected: vm.quiz[0].selected === 1}" ng-click="vm.selectQuiz(0,1)">
+                        <p>Falso</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="w-100">
+
+                  <div class="feedback" ng-show="vm.quiz[0].feedback">
+                    <div class="correct" ng-show="vm.quiz[0].points === 1">
+                      <p class="semititle bold">Isso mesmo, ao olharmos para as etapas da consciência situacional, o médico do caso falhou em projetar as possíveis consequências do atraso do antibiótico e assim, não tomou uma decisão de forma proativa.</p>
+                    </div>
+                    <div class="wrong" ng-show="vm.quiz[0].points === 0">
+                      <p class="semititle bold">Resposta incorreta. A sentença é verdadeira, pois ao olharmos para as etapas da consciência situacional, o médico do caso falhou em projetar as possíveis consequências do atraso do antibiótico e assim, não tomou uma decisão de forma proativa.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="remove-animation" ng-show="vm.currentItem === 4">
+                <p>Utilizando a consciência situacional, este caso pode ser percebido da seguinte maneira: </p>
+
+                <div class="w-45 inline-block-middle">
+                  <img class="img-responsive block centered" src="assets/images/p1/desktop/imagens/imagem_funil_02.png" alt="">
+                </div>
+                <div class="w-54 inline-block-middle">
+                  <div class="pira">
+                    <p>Paciente com 75 anos, com ITU, hipotensa com pouca resposta ao tratamento.</p>
+                  </div>
+                  <div class="pira">
+                    <p class="inline-block-middle">
+                      <b>Recall itens:</b><br/>
+                      ATB adequado?<br/>
+                      Protocolo instituído?<br/>
+                      <b>Riscos:</b><br/>
+                      Insuf. Respiratória, Choque.
+                    </p>
+                    <div class="inline-block-middle ml-1">
+                      <img src="assets/images/p1/desktop/imagens/icone_bandeira_vermelha.png" alt="" style="max-height: 3rem;">
+                    </div>
+                  </div>
+                  <div class="pira">
+                    <p class="inline-block-middle">
+                      <b>Alerta situacional:</b>  <br/>
+                      Mudança imediata do antibiótico.<br/>
+                      Monitorar exames e SSVV
+                    </p>
+                    <div class="inline-block-middle ml-1">
+                      <img src="assets/images/p1/desktop/imagens/icone_bandeira_vermelha.png" alt="" style="max-height: 3rem;">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="pira">
+                      <p>
+                        <b>Tomada de decisão:</b><br/>
+                        Objetivos<br/>
+                        Metas<br/>
+                        Ações claras
+                      </p>
+                    </div>
+                    <div class="inline-block-middle">
+                      <img src="assets/images/p1/desktop/formas/forma_seta_curta.png" alt="" style="max-height: 1rem;">
+                      <p class="inline-block-middle bold black">Comunicação!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="remove-animation" ng-show="vm.currentItem === 5">
+                <p>Ao projetar possíveis riscos e desfechos, é fundamental que comunique a equipe e verbalize a sua preocupação, ou seja, <b>"compartilhe seu modelo mental"</b>. </p>
+
+                <div class="bg-degrade border-radius box-shadow px-3 py-2 my-1">
+                  <p class="white bold">Essa atitude é fundamental para que a equipe fique atenta com relação ao alerta situacional que você visualizou.</p>
+                </div>
+
+                <p>Compartilhe seu modelo mental com a equipe sempre que algo parecer errado ou projetar situações que possam resultar em desfechos negativos.  </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbuttons">
+    <div class="prevBtn" ng-click="vm.game.prev()">
+      <img src="assets/images/p1/botoes/botao_voltar.png" alt="">
+    </div>
+    <div class="nextBtn" ng-click="vm.game.next()" ng-show="vm.game.screenFinished()">
+      <img src="assets/images/p1/botoes/botao_avancar.png" alt="">
+    </div>
+  </div>
+
+</div>

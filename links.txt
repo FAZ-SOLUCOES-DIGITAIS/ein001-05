@@ -1,0 +1,6 @@
+mklink /d "C:\Projetos\FAZ\013_Einstein\003_dev\005_2\bower_components" "C:\Projetos\FAZ\010_Alelo\003_dev\alelo-001\bower_components"
+mklink /d "C:\Projetos\FAZ\013_Einstein\003_dev\005_2\node_modules" "C:\Projetos\FAZ\010_Alelo\003_dev\alelo-001\node_modules"
+
+weblink: https://faz.etc.br/aceite/ein/001/04
+
+scorm: https://faz.etc.br/aceite/ein/001/04/einstein-001-04_scorm.zip

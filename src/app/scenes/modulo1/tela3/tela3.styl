@@ -1,0 +1,150 @@
+.tela.mod1tela3
+  position relative
+  min-height 100%
+  width 100%
+  height 100% /* cross-browser */
+  background url('../assets/images/p1/desktop/bgs/bg_03.png')
+  //background-attachment fixed
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+
+  &:before
+    content ""
+    position absolute
+    left calc(50%)
+    top 10%
+    width calc(50%)
+    height 80%
+    transform translateX(-50%)
+    background url('../assets/images/p1/desktop/imagens/imagem_funil_01.png')
+    background-position center top
+    background-repeat no-repeat
+    background-size contain
+
+
+
+  .container-fluid
+    height 100%
+    padding 0 5rem
+
+    .table
+      margin-bottom 1rem
+
+    .menu-item
+      display block
+      margin-bottom 0.5rem
+
+      &.locked
+        opacity 0.5
+        cursor default
+
+      .menu-number
+        display inline-block
+        vertical-align middle
+        width 3rem
+        height 3rem
+        border-radius 50%
+        background green
+
+        p
+          text-align center
+          line-height 3rem
+          font-size 2rem
+          font-weight bold
+          color white
+
+      .menu-text
+        display inline-table
+        vertical-align middle
+        width calc(100% - 5rem)
+        margin-left 0.6rem
+        min-height 3rem
+        border-radius 1.5rem
+        background green
+
+        p
+          display table-cell
+          vertical-align middle
+          text-align left
+          font-size 1rem
+          font-weight 300
+          color white
+          padding 0 1.5rem
+
+      &.menu-1
+        .menu-number
+          background #91c73e
+        .menu-text
+          background #91c73e
+      &.menu-2
+        .menu-number
+          background #5dbe57
+        .menu-text
+          background #5dbe57
+      &.menu-3
+        .menu-number
+          background #02b28e
+        .menu-text
+          background #02b28e
+      &.menu-4
+        .menu-number
+          background #2a9494
+        .menu-text
+          background #2a9494
+      &.menu-5
+        .menu-number
+          background #007b95
+        .menu-text
+          background #007b95
+      &.menu-6
+        .menu-number
+          background #056073
+        .menu-text
+          background #056073
+
+
+    .row
+      height 100%
+
+    .h-50
+      display table
+      min-height 20rem
+      padding 0 3rem
+
+      .table-cell
+        display table-cell
+        vertical-align middle
+
+        img
+          max-height 13rem
+
+
+@media screen and (orientation: portrait)
+  .tela.mod1tela3
+    background url('../assets/images/p1/desktop/bgs/bg_03.png')
+    //background-attachment fixed
+    background-position top center
+    background-repeat no-repeat
+    background-size cover
+
+    &:before
+      content ""
+      position absolute
+      left calc(25%)
+      top 10%
+      width calc(80%)
+      height 80%
+      transform translateX(-50%)
+      background url('../assets/images/p1/desktop/imagens/imagem_funil_01.png')
+      background-position center
+      background-repeat no-repeat
+      background-size contain
+
+    .container-fluid
+      height 100%
+      padding 0 1rem
+
+      .table
+        margin-bottom 1rem
+
