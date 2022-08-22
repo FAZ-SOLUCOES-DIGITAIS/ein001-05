@@ -1,11 +1,18 @@
 .tela.menu
   position relative
   min-height 100%
-  width 100%
+  width 100vw
   height auto /* cross-browser */
   min-height calc(100 * var(--vh))
   background white
   padding 2rem 0
+  overflow-x hidden
+
+  ul
+    padding-left 1.5rem
+
+    li
+      margin-bottom 0.1rem
 
   .bg-1
     background url('../assets/images/bgs/bg_01_p_01.png')
@@ -75,6 +82,196 @@
       background-position right center
       background-repeat no-repeat
       background-size auto 60%
+
+  $scale = calc(80vw / 1200px)
+  .fases-01
+    position relative
+    //width 920px
+    //height 1200px
+    background url('../assets/images/formas/linhas_menu_fases.png')
+    //background-attachment fixed
+    background-position center
+    background-repeat no-repeat
+    background-size auto 100%
+    //transform scale(var(--fwidth))
+    //transform-origin center top
+
+  .bg-caso
+    background url('../assets/images/formas/linha_o_caso.png')
+    //background-attachment fixed
+    background-position center
+    background-repeat no-repeat
+    background-size 100% 100%
+
+  .truefalse_btn
+    display inline-block
+    vertical-align middle
+    border-radius 2rem
+    padding 1rem 0
+    text-align center
+    min-width 10rem
+    transition 0.2s background
+    margin 0 0.5rem
+
+    p
+      font-weight bold
+
+    &.true_btn
+      background rgba(0,255,0,0.4)
+
+    &.false_btn
+      background rgba(255,0,0,0.4)
+
+    &.selected
+      &.true_btn
+        background rgba(0,255,0,1)
+
+      &.false_btn
+        background rgba(255,0,0,1)
+
+  .bg-4
+    background url('../assets/images/imagens/imagem_06.png')
+    //background-attachment fixed
+    background-position center
+    background-repeat no-repeat
+    background-size 100% auto
+    min-height 20rem
+    border-radius 2rem
+
+  .timeline
+    position relative
+
+    .timeline-btn
+      display block
+      position relative
+      text-align center
+      padding-top 5rem
+
+      &:before
+        content ""
+        position absolute
+        left 50%
+        top 0rem
+        width 3px
+        height 5rem
+        background green
+        transform translateX(-50%)
+
+      &.last
+        padding-bottom 5rem
+        &:after
+          content ""
+          position absolute
+          left 50%
+          bottom 0
+          width 3px
+          height 5rem
+          background green
+          transform translateX(-50%)
+
+      .timeline-btn-inside
+        position relative
+        display inline-block
+        padding 1rem 2rem
+        border-radius 1.5rem
+        font-weight bold
+        color white
+        background green
+        z-index 20
+
+      .timeline-item
+        position absolute
+        width 12rem
+        height auto
+        top 6.5rem
+        transform translateY(-50%)
+        z-index 10
+
+        p
+          background white
+          color black
+          border-radius 1.5rem
+          padding 1rem
+          box-shadow 0 0 15px 1px rgba(0,0,0,0.2)
+          text-align left
+
+          &.bg-green
+            background green
+            color white
+
+        &.timeline-left
+          right calc(50% + 6rem)
+
+          &:before
+            content ""
+            position absolute
+            left 100%
+            top 50%
+            width 6rem
+            height 3px
+            background green
+            transform translateY(-50%)
+            z-index 9
+
+        &.timeline-right
+          left calc(50% + 6rem)
+
+          &:before
+            content ""
+            position absolute
+            left -6rem
+            top 50%
+            width 6rem
+            height 3px
+            background green
+            transform translateY(-50%)
+            z-index 9
+
+      &.bigger
+        padding-top 8rem
+
+        &:before
+          height 8rem
+
+        .timeline-item
+          top 9.5rem
+
+  .bg-5
+    position absolute
+    right 0
+    top 0
+    width 50%
+    height 100%
+    background url('../assets/images/bgs/bg_azul_claro_com_imagem.png')
+    //background-attachment fixed
+    background-position right center
+    background-repeat no-repeat
+    background-size auto 100%
+
+  .bg-6
+    position absolute
+    left 0
+    top 10%
+    width 40%
+    height 50%
+    background url('../assets/images/bgs/bg_azul_escuro_com_imagem.png')
+    //background-attachment fixed
+    background-position left center
+    background-repeat no-repeat
+    background-size auto 100%
+
+  .bg-7
+    position absolute
+    right 0
+    top 0
+    width 50%
+    height 70%
+    background url('../assets/images/imagens/imagem_10.png')
+    //background-attachment fixed
+    background-position center
+    background-repeat no-repeat
+    background-size contain
+    transform translateX(8%) translateY(3%)
 
 
 /* Small devices (tablets, 768px and up) */

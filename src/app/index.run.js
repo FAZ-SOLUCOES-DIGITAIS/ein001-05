@@ -145,6 +145,10 @@
       }else{
         document.querySelector(':root').style.setProperty('--roletaSize', window.innerHeight/20);
       }
+
+      var fwidth = angular.element('.screen.screen-4').width() / 1200;
+      console.log(fwidth)
+      document.querySelector(':root').style.setProperty('--fwidth', fwidth);
     }
 
     resize();
