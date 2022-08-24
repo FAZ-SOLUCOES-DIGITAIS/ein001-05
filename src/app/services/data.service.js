@@ -11,7 +11,7 @@
 
       pipwerks.SCORM.version = "1.2";
       data.encode = false;
-      data.id = "einstein-001-05"
+      data.id = "einstein-001-05_2"
 
       data.scorm = pipwerks.SCORM;
       data.scormConected = data.scorm.init();
@@ -23,7 +23,7 @@
       data.success_score = 0.7;
 
       data.data = {
-        version: "0.3",
+        version: "0.1",
         currentTry:0,
         currentModule:0,
         currentScreen:0,

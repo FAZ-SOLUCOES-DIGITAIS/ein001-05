@@ -6,62 +6,86 @@ $navbar-inverse-link-color = #5AADBB
 $icon-font-path = "../../bootstrap-stylus/fonts/"
 
 @font-face
-  font-family "Roboto"
-  src url('../assets/fonts/Roboto-Bold.ttf')
+  font-family "Montserrat"
+  src url('../assets/fonts/Montserrat-Black.ttf')
+  font-weight 900
+  font-style normal
+
+@font-face
+  font-family "Montserrat"
+  src url('../assets/fonts/Montserrat-BlackItalic.ttf')
+  font-weight 900
+  font-style italic
+
+@font-face
+  font-family "Montserrat"
+  src url('../assets/fonts/Montserrat-Bold.ttf')
   font-weight bold
   font-style normal
 
 @font-face
-  font-family "Roboto"
-  src url('../assets/fonts/Roboto-BoldItalic.ttf')
+  font-family "Montserrat"
+  src url('../assets/fonts/Montserrat-BoldItalic.ttf')
   font-weight bold
   font-style italic
 
 @font-face
-  font-family "Roboto"
-  src url('../assets/fonts/Roboto-Light.ttf')
+  font-family "Montserrat"
+  src url('../assets/fonts/Montserrat-ExtraBold.ttf')
+  font-weight 800
+  font-style normal
+
+@font-face
+  font-family "Montserrat"
+  src url('../assets/fonts/Montserrat-ExtraBoldItalic.ttf')
+  font-weight 800
+  font-style italic
+
+@font-face
+  font-family "Montserrat"
+  src url('../assets/fonts/Montserrat-Light.ttf')
   font-weight 200
   font-style normal
 
 @font-face
-  font-family "Roboto"
-  src url('../assets/fonts/Roboto-LightItalic.ttf')
+  font-family "Montserrat"
+  src url('../assets/fonts/Montserrat-LightItalic.ttf')
   font-weight 200
   font-style italic
 
 @font-face
-  font-family "Roboto"
-  src url('../assets/fonts/Roboto-Medium.ttf')
+  font-family "Montserrat"
+  src url('../assets/fonts/Montserrat-Medium.ttf')
   font-weight 250
   font-style normal
 
 @font-face
-  font-family "Roboto"
-  src url('../assets/fonts/Roboto-MediumItalic.ttf')
+  font-family "Montserrat"
+  src url('../assets/fonts/Montserrat-MediumItalic.ttf')
   font-weight 250
   font-style italic
 
 @font-face
-  font-family "Roboto"
-  src url('../assets/fonts/Roboto-Regular.ttf')
+  font-family "Montserrat"
+  src url('../assets/fonts/Montserrat-Regular.ttf')
   font-weight 300
   font-style normal
 
 @font-face
-  font-family "Roboto"
-  src url('../assets/fonts/Roboto-Italic.ttf')
+  font-family "Montserrat"
+  src url('../assets/fonts/Montserrat-RegularItalic.ttf')
   font-weight 300
   font-style italic
 
 @font-face
-  font-family "Roboto"
-  src url('../assets/fonts/Roboto-Thin.ttf')
+  font-family "Montserrat"
+  src url('../assets/fonts/Montserrat-Thin.ttf')
   font-weight 100
   font-style normal
 
 @font-face
-  font-family "Roboto"
-  src url('../assets/fonts/Roboto-ThinItalic.ttf')
+  font-family "Montserrat"
+  src url('../assets/fonts/Montserrat-ThinItalic.ttf')
   font-weight 100
   font-style italic
 
@@ -148,9 +172,9 @@ html, body
   //height 100%
   //height -webkit-fill-available
   //height stretch
-  font-family "Roboto", sans-serif
+  font-family "Montserrat", sans-serif
   font-size 16px
-  font-weight 200
+  font-weight 300
 
 body
   //min-height 100%
@@ -625,6 +649,10 @@ body
     font-weight 500
   .bold
     font-weight bold
+  .extrabold
+    font-weight 800
+  .boldblack
+    font-weight 900
 
 
   .center
@@ -635,59 +663,51 @@ body
     text-align right
 
   .blue
-    color #007b95
+    color #0e8ddc
   .yellow
     color #ffcb03
   .white
     color white
   .purple
     color #60286f
-    &._p1
-      color #60286f
-    &._p3
-      color #642e6b
   .black
     color black
   .pink
     color #ef4164
 
   .light-blue
-    color #0272bc
+    color #36cbd4
   .orange
-    color #f8941f
+    color #efb460
   .red
-    color #d2222a
+    color rgba(227,75,74,1)
 
   .green
-    color #005a50
-    &._p2
-      color #3ea77f
-    &._p3
-      color #005a50
-    &._p6
-      color #007a5d
+    color #3ea77f
+  .green-2
+    color #79d1c5
+  .green-3
+    color #7ea564
+  .green-4
+    color #b0d995
 
   .light-green
     color #91c73e
 
   .dark-green
-    color #2a9494
+    color #038b9b
 
   .dark-blue
-    color #173958
+    color #038b9b
 
   .bg-blue
-    background-color #007b95
+    background-color #0e8ddc
   .bg-yellow
     background-color #ffcb03
   .bg-white
     background-color white
   .bg-purple
     background-color #60286f
-    &._p1
-      background-color #60286f
-    &._p3
-      background-color #642e6b
   .bg-black-20
     background-color rgba(0,0,0,0.2)
   .bg-black-50
@@ -697,13 +717,11 @@ body
   .bg-light-green
     background-color #bdd752
   .bg-dark-green
-    background-color #2a9494
+    background-color #038b9b
   .bg-dark-blue
-    background-color #173958
+    background-color #038b9b
   .bg-pink
     background-color #ef4164
-    &._p11
-      background-color #bd2e6c
   .bg-pink2
     background-color #ea94a9
 
@@ -712,7 +730,7 @@ body
   .bg-light-green
     background-color #91c73e
   .bg-orange
-    background-color #f8941f
+    background-color #efb460
   .bg-red
     background-color #d7464d
   .bg-red2
@@ -735,12 +753,13 @@ body
     background linear-gradient(90deg, #522e91, #a53cbf)
   .bg-green
     background-color #3ea77f
-    &._p1
-      background-color #3ea77f
-    &._p3
-      background-color #005a50
-    &._p6
-      background-color #007a5d
+  .bg-green-2
+    background-color #79d1c5
+  .bg-green-3
+    background-color #7ea564
+  .bg-green-4
+    background-color #b0d995
+
     //background linear-gradient(90deg, #0dcb23, #009b23)
 
   .bg-degrade

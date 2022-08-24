@@ -54,6 +54,13 @@
         //$rootScope.updateProgress();
       }
 
+      game.finishGame = function(_score){
+        game.data.trilhas.trilha1.completed = true;
+        game.data.completed = true;
+        game.data.score = _score || 100;
+        game.save();
+      }
+
       game.screenFinished = function(){
         return game.data.telas[game.data.currentModule]['tela' + game.modules[game.data.currentModule][game.data.currentScreen]];
       }

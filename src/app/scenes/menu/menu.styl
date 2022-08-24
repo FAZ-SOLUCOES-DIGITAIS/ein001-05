@@ -1,18 +1,30 @@
 .tela.menu
   position relative
   min-height 100%
-  width 100vw
+  width 100%
   height auto /* cross-browser */
   min-height calc(100 * var(--vh))
   background white
   padding 2rem 0
   overflow-x hidden
 
+  .b1
+    color #10ab97
+  .b2
+    color #36cbd4
+  .b3
+    color #045f9a
+  .b4
+    color #00a5e4
+
   ul
     padding-left 1.5rem
 
     li
       margin-bottom 0.1rem
+
+  .first-boxes
+    min-height 18rem
 
   .bg-1
     background url('../assets/images/bgs/bg_01_p_01.png')
@@ -47,7 +59,7 @@
 
   .bg-3
     position absolute
-    right 0
+    right -15px
     top -10%
     width 40%
     height 120%
@@ -83,21 +95,125 @@
       background-repeat no-repeat
       background-size auto 60%
 
-  $scale = calc(80vw / 1200px)
   .fases-01
     position relative
-    //width 920px
-    //height 1200px
-    background url('../assets/images/formas/linhas_menu_fases.png')
-    //background-attachment fixed
+    width 100%
+    /*background url('../assets/images/formas/linhas_menu_fases.png')
     background-position center
     background-repeat no-repeat
-    background-size auto 100%
-    //transform scale(var(--fwidth))
-    //transform-origin center top
+    background-size auto 100%*/
+    //padding 0 22rem
+
+    .fase-bkg
+      margin 0 auto
+
+    .fase-btn
+      position absolute
+      left 50%
+      transform translateX(-50%)
+      width 18%
+
+      &.fase-btn-1
+        top 12%
+      &.fase-btn-2
+        top 29.7%
+      &.fase-btn-3
+        top 47.7%
+      &.fase-btn-4
+        top 65.5%
+
+      img
+        width 100%
+
+    .content-text
+      position absolute
+      width 35%
+      height 20%
+      display table
+
+      &.content-text-1
+        left 2%
+        top 8%
+      &.content-text-2
+        right 2%
+        top 26%
+      &.content-text-3
+        left 2%
+        top 44%
+      &.content-text-4
+        right 2%
+        top 62%
+
+      .content-text-inner
+        display table-cell
+        vertical-align middle
+
+  .fases-02
+    position relative
+    width 100%
+    /*background url('../assets/images/formas/linhas_menu_fases.png')
+    background-position center
+    background-repeat no-repeat
+    background-size auto 100%*/
+    //padding 0 22rem
+
+    .fase-bkg
+      margin 0 auto
+
+    .fase-btn
+      position absolute
+      left 50%
+      transform translateX(-50%)
+      width 18%
+
+      &.fase-btn-1
+        top 26.3%
+      &.fase-btn-2
+        top 42.9%
+      &.fase-btn-3
+        top 59.5%
+      &.fase-btn-4
+        top 76.2%
+
+      img
+        width 100%
+
+    .content-text
+      position absolute
+      width 35%
+      height 20%
+      display table
+
+      &.content-text-0
+        left 4%
+        top 2%
+
+      &.content-text-1
+        left 2%
+        top 22.5%
+      &.content-text-2
+        right 2%
+        top 39%
+      &.content-text-3
+        left 2%
+        top 56%
+      &.content-text-4
+        right 2%
+        top 73%
+
+      .content-text-inner
+        display table-cell
+        vertical-align middle
 
   .bg-caso
     background url('../assets/images/formas/linha_o_caso.png')
+    //background-attachment fixed
+    background-position center
+    background-repeat no-repeat
+    background-size 100% 100%
+
+  .bg-caso-2
+    background url('../assets/images/formas/linha_o_caso_03.png')
     //background-attachment fixed
     background-position center
     background-repeat no-repeat
@@ -115,19 +231,20 @@
 
     p
       font-weight bold
+      color white
 
     &.true_btn
-      background rgba(0,255,0,0.4)
+      background rgba(54,193,110,0.4)
 
     &.false_btn
-      background rgba(255,0,0,0.4)
+      background rgba(227,75,74,0.4)
 
     &.selected
       &.true_btn
-        background rgba(0,255,0,1)
+        background rgba(54,193,110,1)
 
       &.false_btn
-        background rgba(255,0,0,1)
+        background rgba(227,75,74,1)
 
   .bg-4
     background url('../assets/images/imagens/imagem_06.png')
@@ -154,7 +271,7 @@
         top 0rem
         width 3px
         height 5rem
-        background green
+        background #7c9474
         transform translateX(-50%)
 
       &.last
@@ -166,7 +283,19 @@
           bottom 0
           width 3px
           height 5rem
-          background green
+          background #7c9474
+          transform translateX(-50%)
+
+      &.last2
+        padding-bottom 2rem
+        &:after
+          content ""
+          position absolute
+          left 50%
+          bottom 0
+          width 3px
+          height 2rem
+          background #7c9474
           transform translateX(-50%)
 
       .timeline-btn-inside
@@ -176,7 +305,7 @@
         border-radius 1.5rem
         font-weight bold
         color white
-        background green
+        background #7c9474
         z-index 20
 
       .timeline-item
@@ -196,7 +325,7 @@
           text-align left
 
           &.bg-green
-            background green
+            background #7c9474
             color white
 
         &.timeline-left
@@ -209,7 +338,7 @@
             top 50%
             width 6rem
             height 3px
-            background green
+            background #7c9474
             transform translateY(-50%)
             z-index 9
 
@@ -223,7 +352,7 @@
             top 50%
             width 6rem
             height 3px
-            background green
+            background #7c9474
             transform translateY(-50%)
             z-index 9
 
@@ -273,9 +402,481 @@
     background-size contain
     transform translateX(8%) translateY(3%)
 
+  .question-item
+    padding 1.2rem 0
+    border-bottom 1px solid #ccc
+
+    .question-selection
+      display inline-block
+      vertical-align middle
+      width 3rem
+      height 3rem
+      border-radius 50%
+      border 3px solid #0e8ddc
+      margin 0 1.5rem
+
+    .question-text
+      display inline-block
+      vertical-align middle
+      width calc(100% - 8rem)
+
+    &.selected
+      .question-selection
+        background #0e8ddc
+
+  .bg-line-left-big
+    position relative
+
+    &:before
+      content ""
+      position absolute
+      left 0
+      top 0
+      width 9vw
+      height 56vw
+      background url('../assets/images/formas/linha_azul_02.png')
+      background-position left top
+      background-repeat no-repeat
+      background-size 100% 100%
+      transform translateX(-100%) translateY(calc(-100% + 2px))
+      z-index -1
+
+  .bg-line-left
+    position relative
+
+    &:before
+      content ""
+      position absolute
+      left 0
+      top 0
+      width 30vw
+      height 16vw
+      background url('../assets/images/formas/linha_azul_05.png')
+      background-position left top
+      background-repeat no-repeat
+      background-size 100% 100%
+      transform translateX(-100%) translateY(calc(-100% + 3px))
+      z-index -1
+
+    &.line-green
+      &:before
+        background url('../assets/images/formas/linha_verde_01.png')
+        background-position left top
+        background-repeat no-repeat
+        background-size 100% 100%
+
+  .bg-line-right-big
+    position relative
+
+    &:before
+      content ""
+      position absolute
+      right 0
+      top 0
+      width 30vw
+      height 35vw
+      background url('../assets/images/formas/linha_azul_04.png')
+      background-position left top
+      background-repeat no-repeat
+      background-size 100% 100%
+      transform translateX(100%) translateY(calc(-100% + 2px))
+      z-index -1
+
+  .bg-line-right
+    position relative
+
+    &:before
+      content ""
+      position absolute
+      right 0
+      top 0
+      width 30vw
+      height 30vw
+      background url('../assets/images/formas/linha_azul_07.png')
+      background-position left top
+      background-repeat no-repeat
+      background-size 100% 100%
+      transform translateX(100%) translateY(calc(-100% + 3px))
+      z-index -1
+
+    &.line-yellow
+      &:before
+        height 18vw
+        background url('../assets/images/formas/linha_amarela_01.png')
+        background-position left top
+        background-repeat no-repeat
+        background-size 100% 100%
+
+    &.line-green
+      &:before
+        height 16vw
+        background url('../assets/images/formas/linha_rubi_01.png')
+        background-position left top
+        background-repeat no-repeat
+        background-size 100% 100%
+
+    &.short
+      &:before
+        width 20vw
+        height 15vw
+
+  .screen.screen-2
+    position relative
+    &:before
+      content ""
+      position absolute
+      left -15px
+      top 8rem
+      width 12vw
+      height 96vw
+      background url('../assets/images/bgs/bg_retangulo_azul_02.png')
+      background-position left top
+      background-repeat no-repeat
+      background-size 100% 100%
+      z-index 0
+
+  .screen.screen-3
+    position relative
+    &:before
+      content ""
+      position absolute
+      right -15px
+      top 70%
+      width 16vw
+      height 50vw
+      background url('../assets/images/bgs/poa_azul_03.png')
+      background-position right top
+      background-repeat no-repeat
+      background-size 100% 100%
+      z-index 1
+
+  .screen.screen-4
+    position relative
+    //background #f8f8f8
+    z-index 10
+
+    &:before
+      content ""
+      position absolute
+      left -15px
+      top 35%
+      width 12vw
+      height 15vw
+      background url('../assets/images/bgs/bg_cerebro.png')
+      background-position left center
+      background-repeat no-repeat
+      background-size contain
+      z-index 0
+
+    &:after
+      content ""
+      position absolute
+      right -15px
+      top 49%
+      width 14vw
+      height 17vw
+      background url('../assets/images/bgs/bg_crebro_02.png')
+      background-position right center
+      background-repeat no-repeat
+      background-size contain
+      z-index 0
+
+  .screen.screen-5
+    position relative
+    z-index 9
+
+    &:before
+      content ""
+      position absolute
+      left 4rem
+      top -25%
+      width calc(100% - 8rem)
+      height 100%
+      background url('../assets/images/bgs/bg_caso.png')
+      background-position center
+      background-repeat no-repeat
+      background-size 100% 100%
+      z-index 0
+
+  .screen.screen-6
+    position relative
+    z-index 9
+
+    &:before
+      content ""
+      position absolute
+      left 20%
+      top 30%
+      width calc(60%)
+      height 60%
+      background url('../assets/images/bgs/bg_quadrado_verde.png')
+      background-position center
+      background-repeat no-repeat
+      background-size 100% 100%
+      z-index 0
+
+  .screen.screen-7
+    position relative
+    z-index 9
+
+    &:before
+      content ""
+      position absolute
+      left 20%
+      top 30%
+      width calc(60%)
+      height 60%
+      background url('../assets/images/bgs/bg_retangulo_azul_acinzentado_01.png')
+      background-position center
+      background-repeat no-repeat
+      background-size 100% 100%
+      z-index 0
+
+  .screen.screen-8
+    background #f8f8f8
+
+  .screen.screen-9
+    position relative
+    z-index 10
+
+  .screen.screen-10
+    position relative
+    z-index 9
+
+    &:before
+      content ""
+      position absolute
+      left 4rem
+      top -25%
+      width calc(100% - 8rem)
+      height 100%
+      background url('../assets/images/bgs/bg_caso.png')
+      background-position center
+      background-repeat no-repeat
+      background-size 100% 100%
+      z-index 0
+
+  .screen.screen-11
+    position relative
+    z-index 9
+
+    &:before
+      content ""
+      position absolute
+      left 20%
+      top 17%
+      width calc(60%)
+      height 73%
+      background url('../assets/images/bgs/bg_cinza.png')
+      background-position center
+      background-repeat no-repeat
+      background-size 100% 100%
+      z-index 0
+      border-radius 2rem
+
+  .screen.screen-21
+    position relative
+    z-index 10
+
+  .screen.screen-22
+    position relative
+    z-index 9
+
+    &:before
+      content ""
+      position absolute
+      left 4rem
+      top -20%
+      width calc(100% - 8rem)
+      height 110%
+      background url('../assets/images/bgs/bg_caso.png')
+      background-position center
+      background-repeat no-repeat
+      background-size 100% 100%
+      z-index 0
+
+  .screen.screen-23
+    position relative
+    z-index 9
+
+    &:before
+      content ""
+      position absolute
+      left 20%
+      top 10%
+      width calc(60%)
+      height 80%
+      background url('../assets/images/bgs/bg_cinza.png')
+      background-position center
+      background-repeat no-repeat
+      background-size 100% 100%
+      z-index 0
+      border-radius 2rem
+
+    .dot
+      position relative
+      display inline-block
+      width 1rem
+      height 1rem
+      border-radius 50%
+      background #7c9474
+      margin-bottom -3px
+
+  .bg-vertical-line
+    position relative
+
+    &:before
+      content ""
+      position absolute
+      left 3rem
+      top 0
+      width 3px
+      height calc(100% + 2rem)
+      background #0e8ddc
+
+  .bg-last-line
+    position relative
+
+    &:before
+      content ""
+      position absolute
+      left 3rem
+      top 0
+      width 5rem
+      height calc(50% + 2rem)
+      border-radius 0 0 0 2rem
+      border-left 3px solid #0e8ddc
+      border-bottom 3px solid #0e8ddc
+
+  .screen.screen-24
+    position relative
+    z-index 9
+
+    &:before
+      content ""
+      position absolute
+      left 20%
+      top 10%
+      width calc(60%)
+      height 80%
+      background url('../assets/images/bgs/bg_retangulo_azul_acinzentado_01.png')
+      background-position center
+      background-repeat no-repeat
+      background-size 100% 100%
+      z-index 0
+
+  .screen.screen-25
+    position relative
+    background #f8f8f8
+    z-index 10
+
+    &:before
+      content ""
+      position absolute
+      right -15px
+      top 5%
+      width 35%
+      height 90%
+      background url('../assets/images/bgs/bg_retangulo_ azul_opaco.png')
+      background-position right center
+      background-repeat no-repeat
+      background-size contain
+      z-index 0
+
+  .left-balls
+    position absolute
+    left -15px
+    top 0
+    width 15%
+    height 100%
+    background url('../assets/images/bgs/poa_cinza.png')
+    background-position left top
+    //background-repeat no-repeat
+    background-size contain
+    z-index 0
+
+    &.grey-balls
+      background url('../assets/images/bgs/poa_cinza.png')
+      background-position left top
+      //background-repeat no-repeat
+      background-size 100% auto
 
 /* Small devices (tablets, 768px and up) */
 @media screen and (orientation:portrait)
   .tela.menu
     position relative
+
+    .first-boxes
+      min-height 22rem
+
+    .bg-3
+      position absolute
+      right -15px
+      top 0%
+      width 40%
+      height 100%
+      background url('../assets/images/bgs/bg_retangulo_azul_01.png')
+      //background-attachment fixed
+      background-position right center
+      background-repeat no-repeat
+      background-size auto 100%
+
+      &:before
+        content ""
+        position absolute
+        width 100%
+        height 100%
+        right 0
+        top 0
+        background url('../assets/images/bgs/poa_azul_03.png')
+        //background-attachment fixed
+        background-position right center
+        background-repeat no-repeat
+        background-size auto 80%
+
+      &:after
+        content ""
+        position absolute
+        width 100%
+        height 100%
+        right 0
+        top 0
+        background url('../assets/images/imagens/imagem_02.png')
+        //background-attachment fixed
+        background-position right center
+        background-repeat no-repeat
+        background-size auto 60%
+
+    .screen.screen-2
+      position relative
+      &:before
+        display none
+
+    .screen.screen-4
+      position relative
+      //background #f8f8f8
+      z-index 10
+
+      &:before
+        display none
+
+      &:after
+        display none
+
+    .screen.screen-5, .screen.screen-10, .screen.screen-22
+      position relative
+      z-index 9
+
+      &:before
+        content ""
+        position absolute
+        left -15px
+        top -25%
+        width calc(100% + 30px)
+        height 100%
+        background url('../assets/images/bgs/bg_caso.png')
+        background-position center
+        background-repeat no-repeat
+        background-size 100% 100%
+        z-index 0
 
