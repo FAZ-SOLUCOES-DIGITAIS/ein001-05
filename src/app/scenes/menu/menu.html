@@ -14,10 +14,14 @@
 
                   <p class="white">
                     sejam bem-vindos<br />
-                    ao trienamento sobre
+                    ao treinamento sobre
                   </p>
 
-                  <p class="title white bold">
+                  <p class="title white bold content-desktop">
+                    Consciência<br />
+                    Situacional
+                  </p>
+                  <p class="subtitle white bold content-mobile">
                     Consciência<br />
                     Situacional
                   </p>
@@ -138,7 +142,7 @@
     <section class="screen screen-2 py-1 m-py-1">
       <div class="bg-3" data-aos="fade-left"></div>
       <div class="row">
-        <div class="col-xs-9 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
           <div class="row">
             <div class="col-xs-12 col-xs-offset-0 col-sm-7 col-sm-offset-2 col-md-6 col-md-offset-2">
 
@@ -165,7 +169,7 @@
                   em busca de <b>riscos em potencial</b>. </p>
 
                 <p class="black pb-5">Ao identificá-los, ter a capacidade de <b>compreender suas consequências e tomar
-                    decisões preventivas</b> à potenciais danos relacionados a um evento adverso, promovendo a
+                    decisões preventivas</b> a potenciais danos relacionados a um evento adverso, promovendo a
                   <b>segurança do paciente e a qualidade da assistência prestada</b>.
                 </p>
 
@@ -180,7 +184,7 @@
 
     <section class="screen screen-3 py-1 m-py-1">
       <div class="row">
-        <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+        <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
 
           <div class="row">
             <div class="col-xs-9 col-xs-offset-0 col-sm-8 col-sm-offset-2 mb-2 m-mb-2" data-aos="fade-down">
@@ -190,11 +194,20 @@
 
           <div class="row">
             <div class="col-sm-12 col-sm-offset-0">
-              <div class="bg-grey border-radius" style="position: relative;" data-aos="fade-right">
-                <img class="img-responsive" src="assets/images/imagens/imagem_03.png" alt="">
+              <div class="bg-grey border-radius content-desktop bg-img-03" data-aos="fade-right">
+                <img class="img-responsive" src="assets/images/imagens/imagem_03.png" alt="" style="opacity: 0;">
 
                 <div class="bg-white border-radius full-quote w-50 px-2 py-2 m-px-2 m-py-2"
                   style="position: absolute; right: 2rem; top: 50%; transform: translateY(-50%);">
+                  <p class="bold bigtext black">"a percepção de elementos e eventos ambientais em relação ao tempo ou
+                    espaço, a compreensão de seu significado e a projeção de seu status futuro."</p>
+                </div>
+              </div>
+
+              <div class="bg-grey border-radius content-mobile" style="position: relative;" data-aos="fade-right">
+                <img class="img-responsive border-radius" src="assets/images/imagens/imagem_03_2.png" alt="">
+
+                <div class="bg-white border-radius full-quote px-2 py-2 m-px-2 m-py-2">
                   <p class="bold bigtext black">"a percepção de elementos e eventos ambientais em relação ao tempo ou
                     espaço, a compreensão de seu significado e a projeção de seu status futuro."</p>
                 </div>
@@ -237,37 +250,37 @@
                 <img class="fase-bkg img-responsive" src="assets/images/formas/linhas_menu_fases.png" alt="">
 
                 <div class="fase-btn fase-btn-1" ng-click="menu.select(0)" data-aos="fade-left">
-                  <img src="assets/images/botoes/botao_percepcao.png" alt="" ng-class="{pulse: !menu.items[0]}">
+                  <img src="assets/images/botoes/botao_percepcao.png" alt="">
                 </div>
                 <div class="fase-btn fase-btn-2" ng-click="menu.select(1)" data-aos="fade-right">
-                  <img src="assets/images/botoes/botao_compreensao.png" alt="" ng-class="{pulse: !menu.items[1]}">
+                  <img src="assets/images/botoes/botao_compreensao.png" alt="">
                 </div>
                 <div class="fase-btn fase-btn-3" ng-click="menu.select(2)" data-aos="fade-left">
-                  <img src="assets/images/botoes/botao_projecao.png" alt="" ng-class="{pulse: !menu.items[2]}">
+                  <img src="assets/images/botoes/botao_projecao.png" alt="">
                 </div>
                 <div class="fase-btn fase-btn-4" ng-click="menu.select(3)" data-aos="fade-right">
-                  <img src="assets/images/botoes/botao_decisao.png" alt="" ng-class="{pulse: !menu.items[3]}">
+                  <img src="assets/images/botoes/botao_decisao.png" alt="">
                 </div>
 
-                <div class="content-text content-text-1" ng-if="menu.items[0]">
+                <div class="content-text content-text-1" data-aos="fade-right">
                   <div class="content-text-inner">
                     <p class="semititle b1 bold">Percepção</p>
                     <p class="black">A <b>percepção</b> está relacionada à <b>capacidade de um indivíduo em perceber um novo perigo</b>, ou seja, ver, ouvir ou sentir.</p>
                   </div>
                 </div>
-                <div class="content-text content-text-2" ng-if="menu.items[1]">
+                <div class="content-text content-text-2" data-aos="fade-left">
                   <div class="content-text-inner">
                     <p class="semititle b2 bold">Compreensão</p>
                     <p class="black"><b>Compreender</b> é entender <b>o que a informação significa</b>.</p>
                   </div>
                 </div>
-                <div class="content-text content-text-3" ng-if="menu.items[2]">
+                <div class="content-text content-text-3" data-aos="fade-right">
                   <div class="content-text-inner">
                     <p class="semititle b3 bold">Projeção</p>
                     <p class="black">A <b>projeção</b> se refere <b>ao que pode acontecer no ambiente</b>. <br/>É a <b>capacidade de antecipação</b> frente a possíveis consequências dos riscos identificados.</p>
                   </div>
                 </div>
-                <div class="content-text content-text-4" ng-if="menu.items[3]">
+                <div class="content-text content-text-4" data-aos="fade-left">
                   <div class="content-text-inner">
                     <p class="semititle b4 bold">Decisão</p>
                     <p class="black">E a <b>decisão</b> é a <b>capacidade de tomar uma ação</b> para evitar que o dano aconteça diante de uma situação de risco.</p>
@@ -283,7 +296,7 @@
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
           <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-              <div class="bg-white border-radius px-2 m-px-2 py-2 m-py-2 black box-shadow" style="margin-top: -5rem;" data-aos="fade-left">
+              <div class="bg-white border-radius px-2 m-px-2 py-2 m-py-2 black box-shadow" data-aos="fade-left">
                 <div class="inline-block-middle w-32 pr-1 m-pr-1">
                   <img class="img-responsive block centered" src="assets/images/icones/icone_doc_lupa.png" alt=""
                     style="max-height: 6rem;">
@@ -303,6 +316,7 @@
     </section>
 
     <section class="screen screen-5 py-2 m-py-2 pt-5 m-pt-5">
+      <div class="left-balls left-balls-small blue-balls" style="top: -70%;"></div>
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
 
@@ -311,7 +325,7 @@
               <div class="pb-5 m-pb-5">
                 <div class="bg-caso px-2 m-px-2 py-2 m-py-2 black" data-aos="fade-right">
                   <p class="title green boldblack"
-                    style="position: absolute; left: 3rem; top: -1.5rem; width: 43%; text-align: center;">O caso</p>
+                    style="position: absolute; left: 2.5rem; top: -1.5rem; width: 55%; text-align: left;">O caso</p>
                   <p class="semititle bold black">Paciente C.M.S, 34 anos, admitida para tratamento cirúrgico de
                     endometriose profunda.</p>
                 </div>
@@ -372,6 +386,8 @@
     </section>
 
     <section class="screen screen-6 py-2 m-py-2">
+      <div class="left-aba green-aba" style="top: 20%;"></div>
+      <div class="right-aba green-aba"></div>
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
           <div class="row">
@@ -437,6 +453,10 @@
     </section>
 
     <section class="screen screen-6b py-2 m-py-2">
+      <div class="left-balls degrade-balls" style="top: 25%; height: 60%;"></div>
+      <div class="left-ball" style="top: 85%;"></div>
+      <div class="right-ball"></div>
+      <div class="right-balls degrade-balls" style="top: 50%; height: 90%;"></div>
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
           <div class="row">
@@ -480,6 +500,8 @@
     </section>
 
     <section class="screen screen-7 py-2 m-py-2">
+      <div class="left-aba" style="top: 30%; height: 60%; background-size: 100% 100%;"></div>
+      <div class="right-aba" style="top: 30%; height: 60%; background-size: 100% 100%;"></div>
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
           <div class="row">
@@ -633,7 +655,7 @@
 
     <section class="screen screen-8 pt-0 m-pt-2">
       <div class="row">
-        <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
+        <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
 
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
@@ -656,37 +678,37 @@
                 </div>
 
                 <div class="fase-btn fase-btn-1" ng-click="menu.select(4)" data-aos="fade-left">
-                  <img src="assets/images/botoes/botao_percepcao.png" alt="" ng-class="{pulse: !menu.items[4]}">
+                  <img src="assets/images/botoes/botao_percepcao.png" alt="">
                 </div>
                 <div class="fase-btn fase-btn-2" ng-click="menu.select(5)" data-aos="fade-right">
-                  <img src="assets/images/botoes/botao_compreensao.png" alt="" ng-class="{pulse: !menu.items[5]}">
+                  <img src="assets/images/botoes/botao_compreensao.png" alt="">
                 </div>
                 <div class="fase-btn fase-btn-3" ng-click="menu.select(6)" data-aos="fade-left">
-                  <img src="assets/images/botoes/botao_projecao.png" alt="" ng-class="{pulse: !menu.items[6]}">
+                  <img src="assets/images/botoes/botao_projecao.png" alt="">
                 </div>
                 <div class="fase-btn fase-btn-4" ng-click="menu.select(7)" data-aos="fade-right">
-                  <img src="assets/images/botoes/botao_decisao.png" alt="" ng-class="{pulse: !menu.items[7]}">
+                  <img src="assets/images/botoes/botao_decisao.png" alt="">
                 </div>
 
-                <div class="content-text content-text-1" ng-if="menu.items[4]">
+                <div class="content-text content-text-1" data-aos="fade-right">
                   <div class="content-text-inner">
                     <p class="semititle b1 bold">Percepção</p>
                     <p class="black">Houve percepção da <b>distensão abdominal, piora dos exames laboratoriais</b>, e então foi solicitado TC e demais exames para investigar.</p>
                   </div>
                 </div>
-                <div class="content-text content-text-2" ng-if="menu.items[5]">
+                <div class="content-text content-text-2" data-aos="fade-left">
                   <div class="content-text-inner">
                     <p class="semititle b2 bold">Compreensão</p>
                     <p class="black">A médica titular do caso <b>focou no fato de não ter coleção</b> e <b>ignorou o gás perianastomótico</b>, a clínica da paciente e o <b>aumento do PCR</b>.</p>
                   </div>
                 </div>
-                <div class="content-text content-text-3" ng-if="menu.items[6]">
+                <div class="content-text content-text-3" data-aos="fade-right">
                   <div class="content-text-inner">
                     <p class="semititle b3 bold">Projeção</p>
                     <p class="black"><b>Não houve projeção da potencial gravidade do caso</b>, mesmo com os sinais e sintomas e <b>até resultados de exames</b>.</p>
                   </div>
                 </div>
-                <div class="content-text content-text-4" ng-if="menu.items[7]">
+                <div class="content-text content-text-4" data-aos="fade-left">
                   <div class="content-text-inner">
                     <p class="semititle b4 bold">Decisão</p>
                     <p class="black"><b>Houve atraso na tomada de decisão</b> para reabordagem cirúrgica. Se a paciente tivesse sido reabordada mais cedo, possivelmente <b>bloquearia as complicações que se instalaram progressivamente a seguir</b>.</p>
@@ -701,6 +723,7 @@
     </section>
 
     <section class="screen screen-9">
+      <div class="left-aba" style="top: 50%; height:36%; background-size:100% 100%;"></div>
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
 
@@ -751,37 +774,39 @@
             data-aos="fade-right">
             <div class="inline-block-middle w-60 pr-1 m-pr-1">
               <p class="bigtext white bold">Para entender melhor...</p>
-              <p class="white">O artigo de revisão abaixo explora o conceito de consciência situacional e os processos
+              <p class="white">O artigo de revisão ao lado explora o conceito de consciência situacional e os processos
                 cognitivos envolvidos em mantê-la.</p>
             </div>
 
             <div class="inline-block-middle w-35">
-              <div class="content-desktop">
-                <div class="inline-block-middle w-50 pr-1 m-pr-1 center">
-                  <div class="bg-white border-radius px-1 py-1 inline-block-middle">
-                    <img class="img-responsive" src="assets/images/icones/icone_artigo.png" alt=""
-                      style="max-height: 4rem;">
+              <a href="assets/pdfs/artigo_2016.pdf" target="_blank" download="artigo_2016.pdf" rel="noopener noreferrer">
+                <div class="content-desktop">
+                  <div class="inline-block-middle w-50 pr-1 m-pr-1 center">
+                    <div class="bg-white border-radius px-1 py-1 inline-block-middle">
+                      <img class="img-responsive" src="assets/images/icones/icone_artigo.png" alt=""
+                        style="max-height: 4rem;">
+                    </div>
+                  </div>
+
+                  <div class="inline-block-middle w-45">
+                    <p class="white">Clique aqui para ler o artigo.</p>
                   </div>
                 </div>
 
-                <div class="inline-block-middle w-35">
-                  <p class="white">Clique aqui para ler o artigo.</p>
-                </div>
-              </div>
+                <div class="content-mobile">
+                  <div class="center">
+                    <div class="bg-white border-radius px-1 py-1 inline-block-middle">
+                      <img class="img-responsive" src="assets/images/icones/icone_artigo.png" alt=""
+                        style="max-height: 4rem;">
+                    </div>
+                  </div>
 
-              <div class="content-mobile">
-                <div class="center">
-                  <div class="bg-white border-radius px-1 py-1 inline-block-middle">
-                    <img class="img-responsive" src="assets/images/icones/icone_artigo.png" alt=""
-                      style="max-height: 4rem;">
+                  <div class="center mt-1 m-mt-1">
+                    <p class="white">Clique aqui para ler o artigo.</p>
                   </div>
                 </div>
-
-                <div class="center mt-1 m-mt-1">
-                  <p class="white">Clique aqui para ler o artigo.</p>
-                </div>
               </div>
-            </div>
+            </a>
 
           </div>
 
@@ -819,7 +844,7 @@
               <div class="pb-5 m-pb-5">
                 <div class="bg-caso px-2 m-px-2 py-2 m-py-2 black" data-aos="fade-right">
                   <p class="title green boldblack"
-                    style="position: absolute; left: 3rem; top: -1.5rem; width: 43%; text-align: center;">O caso</p>
+                    style="position: absolute; left: 2.5rem; top: -1.5rem; width: 55%; text-align: left;">O caso</p>
                   <p class="semititle bold black">Paciente N.C.T, 75 anos, gênero biológico feminino, procura a UPA com
                     queixa de calafrios, febre e disúria há 2 dias. </p>
                 </div>
@@ -832,7 +857,7 @@
 
               <div class="row">
                 <div class="col-xs-6">
-                  <div class="bg-white border-radius box-shadow px-2 m-px-2 py-2 m-py-2" style="min-height: 30rem;"
+                  <div class="bg-white border-radius box-shadow px-2 m-px-2 py-2 m-py-2" style="min-height: 34rem;"
                     data-aos="fade-right">
                     <div class="center">
                       <div class="inline-block-middle bg-green-2 border-radius px-1 m-px-1 py-1 m-py-1">
@@ -849,7 +874,7 @@
                 </div>
 
                 <div class="col-xs-6">
-                  <div class="bg-white border-radius box-shadow px-2 m-px-2 py-2 m-py-2" style="min-height: 30rem;"
+                  <div class="bg-white border-radius box-shadow px-2 m-px-2 py-2 m-py-2" style="min-height: 34rem;"
                     data-aos="fade-left">
                     <div class="center">
                       <div class="inline-block-middle bg-green-2 border-radius px-1 m-px-1 py-1 m-py-1">
@@ -863,7 +888,7 @@
                       <ul>
                         <li>Diabetes.</li>
                         <li>HAS.</li>
-                        <li>Insuficiência coronariana- Stent.</li>
+                        <li>Insuficiência coronariana- <i>Stent</i>.</li>
                         <li>Infecção urinária de repetição.</li>
                         <li>Lombalgia com ciática.</li>
                         <li>Hipertensão arterial.</li>
@@ -884,6 +909,8 @@
     </section>
 
     <section class="screen screen-11 py-2 m-py-2">
+      <div class="left-balls green-balls" style="top: 50%; height: 60%"></div>
+      <div class="right-balls green-balls" style="top: 10%; height: 60%"></div>
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
           <div class="row">
@@ -904,7 +931,7 @@
                   <div class="timeline-item timeline-left" data-aos="fade-right">
                     <p>
                       Admitida na Semi - SSV:<br />
-                      PA:98x54, FC:68bpm, FR: 16rpm e SpO2: 95%.<br />
+                      PA:98x54, FC:68bpm, FR: 16rpm e SpO<sub>2</sub>: 95%.<br />
                       Alerta, consciente e orientada.
                     </p>
                   </div>
@@ -917,9 +944,9 @@
                 <div class="timeline-btn">
                   <div class="timeline-item timeline-right" data-aos="fade-left">
                     <p>
-                      Hipotensão (PA: 76 x 50), FC: 70bpm, FR 20rpm e SpO2: 95%.
+                      Hipotensão (PA: 76 x 50), FC: 70bpm, FR 20rpm e SpO<sub>2</sub>: 95%.
                       Mantém-se alerta, consciente e orientada.
-                      CD: Recebeu 50ml de Ringer com boa resposta.
+                      CD: Recebeu 500ml de Ringer com boa resposta.
                     </p>
                   </div>
 
@@ -969,9 +996,9 @@
 
                   <div class="timeline-item timeline-right" data-aos="fade-left">
                     <p>
-                      Conseguem contato com o titular que concorda com o ATB.
+                      Conseguem contato com o titular que concorda com o ATB.<br/>
+                      <span style="display: block; padding-top: 0.5rem;">Prescrito Meronem.</span>
                     </p>
-                    <p>Prescrito Meronem.</p>
                   </div>
 
                   <div class="timeline-btn-inside">
@@ -988,7 +1015,7 @@
                   </div>
 
                   <div class="timeline-item timeline-right" data-aos="fade-left">
-                    <p>
+                    <p class="bg-green">
                       Como o titular era infectologista, o plantonista opta por aguardar a validação da conduta com ele.
                     </p>
                   </div>
@@ -1012,6 +1039,10 @@
     </section>
 
     <section class="screen screen-12 py-2 m-py-2">
+      <div class="left-ball"></div>
+      <div class="left-balls grey-balls-small" style="width: 15%; top: 40%;"></div>
+      <div class="right-balls grey-balls-small" style="width: 15%; top: 20%;"></div>
+      <div class="right-ball" style="top: 60%;"></div>
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
           <div class="row">
@@ -1033,7 +1064,7 @@
                   </div>
                 </div>
                 <div class="inline-block-middle w-65">
-                  <p class="black">Por volta das 14h30, paciente persiste com hipotensão (85x48) sendo transferido para
+                  <p class="black">Por volta das 14h30, paciente persiste com hipotensão (85x48) sendo transferida para
                     UTI.</p>
                 </div>
               </div>
@@ -1046,6 +1077,8 @@
     </section>
 
     <section class="screen screen-13 py-2 m-py-2">
+      <div class="left-aba" style="top: 50%; height: 40%; background-size: 100% 100%;"></div>
+      <div class="right-aba" style="top: 50%; height: 40%; background-size: 100% 100%;"></div>
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
           <div class="row">
@@ -1071,12 +1104,13 @@
               </div>
 
 
-              <div class="bg-white border-radius box-shadow mt-2 m-mt-2" data-aos="fade-right">
+              <div class="bg-white border-radius box-shadow mt-2 m-mt-2 question-bg" data-aos="fade-right">
                 <div class="bg-blue border-radius px-2 m-px-2 py-2 m-py-2">
-                  <p class="white bold">Neste caso, o médico teve a parcial do problema: checou cultura positiva para
-                    germe resistente, porém, não percebeu os sinais de sepse e que o antibiótico não era adequado, e as
+                  <p class="white semibold">Neste caso, o médico teve a <b>percepção</b> parcial do problema: checou cultura positiva para
+                    germe resistente, porém, não percebeu os sinais de sepse.<br/>
+                    <b>Compreendeu</b> que o antibiótico não era adequado, porém, <b>não projetou</b> as
                     possíveis consequências de um atraso em iniciar o antibiótico correto. Tal fato causou o atraso de
-                    sua decisão. Além disso, uma vez que antibiótico foi prescrito, possivelmente não comunicou a
+                    sua decisão. Além disso, uma vez que o antibiótico foi prescrito, possivelmente não comunicou a
                     urgência à sua equipe, visto o atraso na infusão do medicamento. </p>
                 </div>
                 <div class="px-2 m-px-2 py-2 m-py-2">
@@ -1138,25 +1172,25 @@
                 </div>
 
                 <div class="fase-btn fase-btn-1" ng-click="menu.select(8)" data-aos="fade-right">
-                  <img src="assets/images/botoes/botao_percepcao.png" alt="" ng-class="{pulse: !menu.items[8]}">
+                  <img src="assets/images/botoes/botao_percepcao.png" alt="">
                 </div>
                 <div class="fase-btn fase-btn-2" ng-click="menu.select(9)" data-aos="fade-left">
-                  <img src="assets/images/botoes/botao_compreensao.png" alt="" ng-class="{pulse: !menu.items[9]}">
+                  <img src="assets/images/botoes/botao_compreensao.png" alt="">
                 </div>
                 <div class="fase-btn fase-btn-3" ng-click="menu.select(10)" data-aos="fade-right">
-                  <img src="assets/images/botoes/botao_projecao.png" alt="" ng-class="{pulse: !menu.items[10]}">
+                  <img src="assets/images/botoes/botao_projecao.png" alt="">
                 </div>
                 <div class="fase-btn fase-btn-4" ng-click="menu.select(11)" data-aos="fade-left">
-                  <img src="assets/images/botoes/botao_decisao.png" alt="" ng-class="{pulse: !menu.items[11]}">
+                  <img src="assets/images/botoes/botao_decisao.png" alt="">
                 </div>
 
-                <div class="content-text content-text-1" ng-if="menu.items[8]">
+                <div class="content-text content-text-1" data-aos="fade-left">
                   <div class="content-text-inner">
                     <p class="semititle b1 bold">Percepção</p>
                     <p class="black">Paciente de 75 anos, com ITU, hipotensa com pouca resposta ao tratamento</p>
                   </div>
                 </div>
-                <div class="content-text content-text-2" ng-if="menu.items[9]">
+                <div class="content-text content-text-2" data-aos="fade-right">
                   <div class="content-text-inner">
                     <p class="semititle b2 bold">Compreensão</p>
                     <p class="black">
@@ -1164,11 +1198,11 @@
                       ATB adequado?<br/>
                       Protocolo atribuído?<br/>
                       <b>Riscos:</b><br/>
-                      Insuf. Respiratória, Choque.
+                      Insuficiência Respiratória, Choque.
                     </p>
                   </div>
                 </div>
-                <div class="content-text content-text-3" ng-if="menu.items[10]">
+                <div class="content-text content-text-3" data-aos="fade-left">
                   <div class="content-text-inner">
                     <p class="semititle b3 bold">Projeção</p>
                     <p class="black">
@@ -1180,7 +1214,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="content-text content-text-4" ng-if="menu.items[11]">
+                <div class="content-text content-text-4" data-aos="fade-right">
                   <div class="content-text-inner">
                     <p class="semititle b4 bold">Decisão</p>
                     <p class="black">
@@ -1204,8 +1238,11 @@
     </section>
 
     <section class="screen screen-15">
+      <div class="left-balls" style="top: 30%;"></div>
+      <div class="right-balls" style="top: 55%;"></div>
+      <div class="left-blue-rect" style="top: 65%;"></div>
       <div class="row">
-        <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
+        <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
 
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
@@ -1266,7 +1303,7 @@
 
               <div class="row">
                 <div class="col-xs-6">
-                  <div class="bg-blue border-radius box-shadow px-2 m-px-2 pb-2 m-pb-2" style="min-height: 17rem;"
+                  <div class="bg-blue border-radius box-shadow px-2 m-px-2 pb-2 m-pb-2" style="min-height: 20rem;"
                     data-aos="fade-right">
                     <div class="center">
                       <div class="inline-block-middle bg-white border-radius px-1 m-px-1 py-1 m-py-1"
@@ -1283,7 +1320,7 @@
                 </div>
 
                 <div class="col-xs-6">
-                  <div class="bg-blue border-radius box-shadow px-2 m-px-2 pb-2 m-pb-2" style="min-height: 17rem;"
+                  <div class="bg-blue border-radius box-shadow px-2 m-px-2 pb-2 m-pb-2" style="min-height: 20rem;"
                     data-aos="fade-left">
                     <div class="center">
                       <div class="inline-block-middle bg-white border-radius px-1 m-px-1 py-1 m-py-1"
@@ -1301,13 +1338,24 @@
                 </div>
               </div>
 
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-0">
+
               <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-4 mt-4 m-mt-4" data-aos="fade-left">
-                  <p class="semititle black bold">Convidamos você a pensar sobre essas questões. </p>
-                  <p class="semititle black">
-                    <span class="subtitle blue bold">Importante!</span><br />
-                    Esse <i>case</i> será retomado ao término dessa seção.
-                  </p>
+                <div class="mt-4 m-mt-4">
+                  <div class="col-xs-5 col-xs-offset-0 col-sm-5">
+                    <img class="img-responsive" src="assets/images/imagens/imagem_extra_01.png" alt="">
+                  </div>
+                  <div class="col-xs-7 col-xs-offset-0 col-sm-7 col-sm-offset-0" data-aos="fade-left">
+                    <p class="semititle black bold mt-1 m-mt-1">Convidamos você a pensar sobre essas questões. </p>
+                    <p class="semititle black">
+                      <span class="subtitle blue bold">Importante!</span><br />
+                      Esse <i>case</i> será retomado ao término dessa seção.
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -1319,27 +1367,26 @@
     </section>
 
     <section class="screen screen-16">
-
       <div class="row">
         <div class="col-xs-12">
-          <div class="mt-4 m-mt-4 content-desktop" style="position: relative;" data-aos="fade-right">
-            <img class="img-responsive" src="assets/images/imagens/imagem_11.png" alt="">
+          <div class="mt-4 m-mt-4 content-desktop bg-img-11" data-aos="fade-right">
+            <img class="img-responsive" src="assets/images/imagens/imagem_11.png" alt="" style="opacity:0;">
 
             <div style="position: absolute; left: 0; top: 0; width: calc(100% - 30px); height: 100%; display: table;">
               <div style="display: table-cell; vertical-align: middle;">
 
                 <div class="row">
-                  <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
+                  <div class="col-xs-12 col-xs-offset-0 col-sm-11 col-sm-offset-1 col-md-8 col-md-offset-2">
 
                     <div class="row">
-                      <div class="col-sm-5 col-sm-offset-1 pl-4 m-pl-4 pr-2 m-pr-2">
+                      <div class="col-sm-7 col-sm-offset-0 col-md-7 col-md-offset-0 pl-4 m-pl-4 pr-2 m-pr-2">
                         <p class="semititle black bold">A Consciência Situacional pode evitar a ocorrência de erros
                           diagnósticos</p>
                       </div>
                     </div>
 
                     <div class="row">
-                      <div class="col-sm-6 col-sm-offset-1">
+                      <div class="col-sm-7 col-sm-offset-0 col-md-7 col-md-offset-0">
                         <div class="bg-blue border-radius px-3 m-px-3 py-3 m-py-3 mt-3 m-mt-3">
                           <p class="semititle white bold">Para entender melhor...</p>
                           <p class="white">O artigo abaixo sugere uma revisão de casos de diagnóstico de câncer em
@@ -1348,14 +1395,16 @@
                             câncer de pulmão, e 56 de 167 (33,5%) casos de câncer colorretal.</p>
 
                           <div>
-                            <div class="inline-block-middle w-30 center mt-1 m-mt-1">
-                              <div class="inline-block-middle bg-white border-radius" style="padding: 0.5rem 1rem;">
-                                <img class="img-responsive" src="assets/images/icones/icone_artigo.png" alt="">
+                            <a href="assets/pdfs/artigo_2011.pdf" target="_blank" download="artigo_2011.pdf" rel="noopener noreferrer">
+                              <div class="inline-block-middle w-30 center mt-1 m-mt-1">
+                                <div class="inline-block-middle bg-white border-radius" style="padding: 0.5rem 1rem;">
+                                  <img class="img-responsive" src="assets/images/icones/icone_artigo.png" alt="">
+                                </div>
                               </div>
-                            </div>
-                            <div class="inline-block-middle w-65 pl-1 m-pl-1">
-                              <p class="white">Clique aqui para ler o artigo</p>
-                            </div>
+                              <div class="inline-block-middle w-65 pl-1 m-pl-1">
+                                <p class="white">Clique aqui para ler o artigo.</p>
+                              </div>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -1391,14 +1440,16 @@
                         câncer de pulmão, e 56 de 167 (33,5%) casos de câncer colorretal.</p>
 
                       <div>
-                        <div class="inline-block-middle w-30 center mt-1 m-mt-1">
-                          <div class="inline-block-middle bg-white border-radius" style="padding: 0.5rem 1rem;">
-                            <img class="img-responsive" src="assets/images/icones/icone_artigo.png" alt="" style="max-height: 6rem;">
+                        <a href="assets/pdfs/artigo_2011.pdf" target="_blank" download="artigo_2011.pdf" rel="noopener noreferrer">
+                          <div class="inline-block-middle w-30 center mt-1 m-mt-1">
+                            <div class="inline-block-middle bg-white border-radius" style="padding: 0.5rem 1rem;">
+                              <img class="img-responsive" src="assets/images/icones/icone_artigo.png" alt="" style="max-height: 6rem;">
+                            </div>
                           </div>
-                        </div>
-                        <div class="inline-block-middle w-65 pl-1 m-pl-1">
-                          <p class="white">Clique aqui para ler o artigo</p>
-                        </div>
+                          <div class="inline-block-middle w-65 pl-1 m-pl-1">
+                            <p class="white">Clique aqui para ler o artigo.</p>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -1410,12 +1461,19 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="screen screen-16b">
+      <div class="left-aba orange-aba" style="top: 4rem;"></div>
+      <div class="right-balls red-balls" style="top: 5%;"></div>
+      <div class="left-balls red-degrade-balls" style="top: 30%;"></div>
+      <div class="right-balls" style="top: 55%;"></div>
 
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 mt-4 m-mt-4">
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
-              <p class="subtitle black bold mb-3 m-mb-3" data-aos="fade-left">Existem fatores que podem reduzir o nível de consciência situacional, como:</p>
+              <p class="subtitle black bold mb-3 m-mb-3 px-0 m-px-3" data-aos="fade-left">Existem fatores que podem reduzir o nível de consciência situacional, como:</p>
 
               <div class="row">
                 <div class="col-xs-4 col-sm-4">
@@ -1446,7 +1504,7 @@
                             alt="" style="max-height: 4rem;">
                         </div>
                         <div class="inline-block-middle w-70">
-                          <p class="black">Falta de atenção.</p>
+                          <p class="black">Estresse e fadiga.</p>
                         </div>
                       </div>
                     </div>
@@ -1460,7 +1518,7 @@
                             alt="" style="max-height: 4rem;">
                         </div>
                         <div class="inline-block-middle w-70">
-                          <p class="black">Falta de atenção.</p>
+                          <p class="black">Falta de conhecimento e habilidade.</p>
                         </div>
                       </div>
                     </div>
@@ -1474,7 +1532,7 @@
                             alt="" style="max-height: 4rem;">
                         </div>
                         <div class="inline-block-middle w-70">
-                          <p class="black">Falta de atenção.</p>
+                          <p class="black">Interferências nas comunicações interpessoais.</p>
                         </div>
                       </div>
                     </div>
@@ -1488,7 +1546,7 @@
                             alt="" style="max-height: 4rem;">
                         </div>
                         <div class="inline-block-middle w-70">
-                          <p class="black">Falta de atenção.</p>
+                          <p class="black">Necessidade de checar a mesma informação ou dado por diversas vezes.</p>
                         </div>
                       </div>
                     </div>
@@ -1502,7 +1560,7 @@
                             alt="" style="max-height: 4rem;">
                         </div>
                         <div class="inline-block-middle w-70">
-                          <p class="black">Falta de atenção.</p>
+                          <p class="black">Ruídos no ambiente de trabalho.</p>
                         </div>
                       </div>
                     </div>
@@ -1513,18 +1571,20 @@
 
               <div class="row">
                 <div class="col-sm-5">
-                  <p class="subtitle pink bold" data-aos="fade-right">E o que vamos fazer nesses casos?</p>
+                  <p class="subtitle pink bold mt-3 m-mt-4" data-aos="fade-right">E o que vamos fazer nesses casos?</p>
                 </div>
                 <div class="col-sm-7">
-                  <img class="img-responsive" src="assets/images/imagens/imagem_12.png" alt=""
-                    style="margin-top: -5rem;" data-aos="fade-left">
+                  <div class="">
+                    <img class="img-responsive" src="assets/images/imagens/imagem_12.png" alt="" data-aos="fade-left">
+                  </div>
+
                 </div>
               </div>
 
               <p class="semititle black bold mb-3 m-mb-3" data-aos="fade-right">Nestes casos, algumas estratégias para elevar o nível de
                 consciência situacional são indicadas. </p>
 
-              <div class="row">
+              <div class="row left-guy">
                 <div class="col-xs-4 col-sm-4">
                   <img class="img-responsive mb-2 m-mb-2" src="assets/images/formas/seta_cima_azul_02.png" alt="" data-aos="fade-right">
                 </div>
@@ -1590,15 +1650,19 @@
     </section>
 
     <section class="screen screen-17">
+      <div class="right-aba grey-aba" style="top: 20%;"></div>
+      <div class="bg-tira-azul-left"></div>
+      <div class="right-balls"></div>
+      <div class="left-balls" style="top:45%;"></div>
+      <div class="bg-tira-azul-right" style="top: 75%;"></div>
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 mt-4 m-mt-4">
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
-              <p class="semititle black bold" data-aos="fade-right">Existem ferramentas que podem auxiliar neste processo. Como é o caso da
+              <p class="semititle black bold mb-2 m-mb-2" data-aos="fade-right">Existem ferramentas que podem auxiliar neste processo. Como é o caso da
                 <i>STEP</i> (do inglês: degrau). Esta ferramenta é dividida em <span class="bold blue">4 fases</span>,
                 onde é necessário avaliar os seguintes componentes:
               </p>
-              <p class="smal mb-2 m-mb-2" data-aos="fade-right">Utilize a barra de rolagem e veja alguns exemplos:</p>
 
               <div class="row bg-vertical-line" data-aos="fade-left">
                 <div class="col-xs-2 col-sm-2">
@@ -1615,12 +1679,12 @@
                       </div>
                     </div>
                     <div class="inline-block-middle w-65 pl-1 m-pl-1">
-                      <p class="bigtext black semibold">STATUS DO PACIENTE</p>
+                      <p class="bigtext black semibold"><i>STATUS</i> DO PACIENTE</p>
                     </div>
                   </div>
 
                   <div class="px-2 m-px-2">
-                    <p class="black my-1 m-my-1">Avalie o status geral do paciente para ter consciência completa da
+                    <p class="black my-1 m-my-1">Avalie o <i>status</i> geral do paciente para ter consciência completa da
                       situação.</p>
                   </div>
 
@@ -1646,7 +1710,7 @@
                 </div>
                 <div class="col-xs-3 col-sm-3 pt-2" style="position: relative;">
                   <img src="assets/images/imagens/imagem_14.png" alt=""
-                    style="position: absolute; width: 180%; height: auto; transform: translateX(-35%); padding-top: 6rem;">
+                    style="position: absolute; width: 170%; height: auto; transform: translateX(-45%); padding-top: 6rem;">
                 </div>
                 <div class="col-xs-7 col-sm-7">
                   <div class="px-2 m-px-2">
@@ -1680,7 +1744,7 @@
                 </div>
                 <div class="col-xs-12 py-1 m-py-1">
                   <div class="bg-blue border-radius white px-2 m-px-2 py-2 m-py-2">
-                    <p>Observe seus colegas de trabalho, avalie se eles estão e em condições de executar as atividades
+                    <p>Observe seus colegas de trabalho, avalie se eles estão em condições de executar as atividades
                       que lhes são propostas. Caso você evidencie que o colaborador não está em condições de realizar
                       alguma atividade, interrompa e delegue a outro colega em melhores condições. Esta postura evita
                       eventos adversos e garante a segurança do paciente.</p>
@@ -1767,7 +1831,7 @@
                 </div>
                 <div class="col-xs-12 py-1 m-py-1">
                   <div class="bg-blue border-radius white px-2 m-px-2 py-2 m-py-2">
-                    <p><b>Relembre:</b> O Huddle é uma breve reunião em time para restabelecer a consciência do grupo e
+                    <p><b>Relembre:</b> O <i>Huddle</i> é uma breve reunião em time para restabelecer a consciência do grupo e
                       traçar mudanças no plano, caso seja necessário.</p>
                   </div>
                 </div>
@@ -1799,14 +1863,17 @@
     </section>
 
     <section class="screen screen-18">
-
+      <div class="left-grey-rect" style="top: 16%;"></div>
+      <div class="left-balls"></div>
+      <div class="right-blue-rect" style="top: 50%;"></div>
+      <div class="right-balls" style="top: 65%;"></div>
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 mt-4 m-mt-4">
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
 
               <p class="semititle black bold mb-3 m-mb-3" data-aos="fade-right">Outra ferramenta que você também pode utilizar é a ferramenta:
-                <i>I’m Safe</i> (Do inglês: Estou seguro?).
+                <i>I’m Safe</i> (Do inglês: Estou seguro).
               </p>
 
               <div class="row">
@@ -1942,27 +2009,31 @@
     </section>
 
     <section class="screen screen-19">
-
+      <div class="left-aba grey-aba full-size" style="top: -50%; height: 150%;"></div>
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 mt-4 m-mt-4">
           <div class="row">
-            <div class="col-sm-8 col-sm-offset-2" data-aos="fade-right">
+            <div class="col-xs-5 col-sm-4 col-sm-offset-0" data-aos="fade-right">
+              <img class="img-responsive" src="assets/images/imagens/imagem_extra_03.png" alt="">
+            </div>
+            <div class="col-xs-7 col-sm-8 col-sm-offset-0" data-aos="fade-left">
 
               <p class="semititle black bold mb-0 m-mb-0">Caso algum dos itens do <i>checklist I’m Safe</i> esteja
                 presente, sua consciência situacional poderá ser afetada, neste caso, sinalize a um colega ou gestor e
                 peça ajuda. </p>
 
-              <p class="black mb-3 m-mb-3">Ter consciência dos elementos que afetam seu desempenho permite mitigá-los e
+              <p class="black mb-3 m-mb-3 pt-1 m-pt-1">Ter consciência dos elementos que afetam seu desempenho permite mitigá-los e
                 contribui tanto para a sua segurança quanto para a segurança do paciente.</p>
-
-              <div class="row">
-                <div class="col-xs-12 col-sm-12">
-                  <img class="img-responsive" src="assets/images/imagens/imagem_23.png" alt="" data-aos="fade-left">
-                </div>
-              </div>
 
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-12">
+              <img class="img-responsive mt-2 m-mt-2" src="assets/images/imagens/imagem_23.png" alt="" data-aos="fade-left">
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -1988,13 +2059,12 @@
                       interfiram na sua consciência situacional. Por isso: </p>
 
                     <div class="bg-blue border-radius px-2 m-px-2 py-1 m-py-1 white mt-1 m-mt-1">
-                      <p>É importante que todos estejam cientes de seus arredores e dos riscos potenciais que enfrentam.
+                      <p>É importante que todos estejam<b> cientes de seus arredores</b> e dos <b>riscos potenciais</b> que enfrentam.
                       </p>
                     </div>
 
                     <div class="bg-blue border-radius px-2 m-px-2 py-1 m-py-1 white mt-1 m-mt-1">
-                      <p>É importante que cada indivíduo esteja cuidando de sua própria segurança e de seus colegas de
-                        trabalho. </p>
+                      <p>É importante que cada indivíduo esteja <b>cuidando de sua própria segurança</b> e de seus <b>colegas de trabalho</b>. </p>
                     </div>
 
                     <div class="bg-blue border-radius px-2 m-px-2 py-1 m-py-1 white mt-1 m-mt-1">
@@ -2014,6 +2084,7 @@
     </section>
 
     <section class="screen screen-21">
+      <div class="right-balls" style="top: 8%;"></div>
 
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 mt-4 m-mt-4">
@@ -2029,14 +2100,13 @@
                         <p class="subtitle bold white">Orientações</p>
                         <ul class="white">
                           <li>
-                            A avaliação possu nota mínima de <b>70%</b> para aprovação.
+                            A avaliação possui nota mínima de <b>70%</b> para aprovação.
                           </li>
                           <li>
                             Você terá <b>3 tentativas</b> para conclusão da avaliação.
                           </li>
                           <li>
-                            Caso não seja aprovado após 3 tentativas, deverá <b>refazer o
-                              curso</b>.
+                            Caso não seja aprovado após 3 tentativas, sua avaliação ficará bloqueada.</b>
                           </li>
                         </ul>
                       </div>
@@ -2079,7 +2149,7 @@
     </section>
 
     <section class="screen screen-22 py-2 m-py-2 pt-5 m-pt-5">
-
+      <div class="left-balls full-size" style="top: 50%; height: 150%;"></div>
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
           <div class="row">
@@ -2087,14 +2157,14 @@
               <div class="pb-5 m-pb-5">
                 <div class="bg-caso-2 px-2 m-px-2 py-2 m-py-2 black" data-aos="fade-left">
                   <p class="title green bold"
-                    style="position: absolute; left: 3rem; top: -1.5rem; width: 43%; text-align: center;">O caso</p>
+                    style="position: absolute; left: 2.5rem; top: -1.5rem; width: 55%; text-align: left;">O caso</p>
                   <p class="bigtext bold black">Paciente N.C.T 75 anos, gênero biológico feminino, procura a UPA
                     Morumbi com queixa de calafrios, febre e dor ao urinar.</p>
                   <p class="bigtext bold black">Após avaliação na UPA é internada na Semi
                     Intensiva para tratamento de ITU com ROCEFIN e vigilância infeciosa.</p>
                   <p class="bigtext bold black">AP: Diabetes, HAS, Insuficiência coronariana <i>- Stent</i> Infecção
                     urinaria
-                    de repetição, Lombalgia com ciática, hipertensão arterial, IRC não dialítico</p>
+                    de repetição, Lombalgia com ciática, hipertensão arterial, IRC não dialítico.</p>
                 </div>
               </div>
             </div>
@@ -2105,6 +2175,7 @@
     </section>
 
     <section class="screen screen-23 py-2 m-py-2">
+      <div class="right-balls grey-balls" style="top: 20%;"></div>
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
           <div class="row">
@@ -2126,7 +2197,7 @@
                   <div class="timeline-item timeline-left" data-aos="fade-right">
                     <p>
                       Admitida na Semi - SSV:<br />
-                      PA:98x54, FC:68bpm, FR: 16rpm e SpO2: 95%.<br />
+                      PA:98x54, FC:68bpm, FR: 16rpm e SpO<sub>2</sub>: 95%.<br />
                       Alerta, consciente e orientada.
                     </p>
                   </div>
@@ -2139,9 +2210,9 @@
                 <div class="timeline-btn">
                   <div class="timeline-item timeline-right" data-aos="fade-left">
                     <p>
-                      Hipotensão (PA: 76 x 50), FC: 70bpm, FR 20rpm e SpO2: 95%.
+                      Hipotensão (PA: 76 x 50), FC: 70bpm, FR 20rpm e SpO<sub>2</sub>: 95%.
                       Mantém-se alerta, consciente e orientada.
-                      CD: Recebeu 50ml de Ringer com boa resposta.
+                      CD: Recebeu 500ml de Ringer com boa resposta.
                     </p>
                   </div>
 
@@ -2191,9 +2262,9 @@
 
                   <div class="timeline-item timeline-right" data-aos="fade-left">
                     <p>
-                      Conseguem contato com o titular que concorda com o ATB.
+                      Conseguem contato com o titular que concorda com o ATB.<br/>
+                      <span style="display: block; padding-top: 0.5rem;">Prescrito Meronem.</span>
                     </p>
-                    <p>Prescrito Meronem.</p>
                   </div>
 
                   <div class="timeline-btn-inside">
@@ -2222,7 +2293,7 @@
 
                 <div class="timeline-btn bigger last2">
                   <div class="timeline-btn-inside">
-                    <p>Por volta das 14:30, paciente persiste com <br/> hipotensão (85x48) sendo transferido para UTI.</p>
+                    <p>Por volta das 14:30, paciente persiste com <br/> hipotensão (85x48) sendo transferida para UTI.</p>
                   </div>
                 </div>
 
@@ -2240,6 +2311,8 @@
     </section>
 
     <section class="screen screen-24 py-2 m-py-2">
+      <div class="left-form"></div>
+      <div class="right-form" style="top: 12%;"></div>
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
           <div class="row">
@@ -2257,7 +2330,7 @@
                   </div>
                   <div class="inline-block-middle w-78">
                     <p class="white bold">
-                      A piora do quadro clinico com transferência para UTI, poderia ter sido evitada?
+                      A piora do quadro clínico com transferência para UTI, poderia ter sido evitada?
                     </p>
                   </div>
                 </div>
@@ -2265,32 +2338,32 @@
 
                   <div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[4].selected === 0}"
-                      ng-click="menu.selectQuiz(4,0)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[0].selected === 0}"
+                      ng-click="menu.selectQuiz(0,0,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>Não, pois esta seria a progressão natural da doença, e independente da conduta médica a evolução clínica possivelmente teria sido a mesma.</p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[4].selected === 1}"
-                      ng-click="menu.selectQuiz(4,1)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[0].selected === 1}"
+                      ng-click="menu.selectQuiz(0,1,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>Sim, se médico tivesse exercitado a consciência situacional, e tido percepção da gravidade atual do caso e projeção das consequências de não mudar tratamento o desfecho poderia ser diferente.</p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[4].selected === 2}"
-                      ng-click="menu.selectQuiz(4,2)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[0].selected === 2}"
+                      ng-click="menu.selectQuiz(0,2,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>Não, pois o médico plantonista tomou todas as condutas cabíveis de acordo com os sinais e sintomas que a paciente apresentava.</p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[4].selected === 3}"
-                      ng-click="menu.selectQuiz(4,3)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[0].selected === 3}"
+                      ng-click="menu.selectQuiz(0,3,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>Sim, poderia ter sido evitado, se a paciente tivesse sido alocada diretamente na UTI, onde ela teria um cuidado intensivo e direcionado.</p>
@@ -2299,17 +2372,17 @@
 
                   </div>
 
-                  <div class="quiz-feedback mt-2 m-mt-2" ng-if="menu.quiz[4].completed">
-                    <div ng-if="menu.quiz[4].selected === 0">
+                  <div class="quiz-feedback mt-2 m-mt-2" ng-if="menu.finalQuiz[0].completed">
+                    <div ng-if="menu.finalQuiz[0].selected === 0">
                       <p class="bigtext red bold">Resposta incorreta. O caso acima poderia ter sido evitado.</p>
                     </div>
-                    <div ng-if="menu.quiz[4].selected === 1">
-                      <p class="bigtext green bold">Resposta correta. Parabéns! Se o médico tivesse exercitado a consciência situacional, entendido que a paciente não estava respondendo à terapêutica proposta, poderia ter se incomodado com a situação e tomado a decisão de checar a cultura e alterar o antibiótico de forma antecipada..</p>
+                    <div ng-if="menu.finalQuiz[0].selected === 1">
+                      <p class="bigtext green bold">Resposta correta. Parabéns! Se o médico tivesse exercitado a consciência situacional, entendido que a paciente não estava respondendo à terapêutica proposta, poderia ter se incomodado com a situação e tomado a decisão de checar a cultura e alterar o antibiótico de forma antecipada.</p>
                     </div>
-                    <div ng-if="menu.quiz[4].selected === 2">
-                      <p class="bigtext red bold">Resposta incorreta. O caso acima poderia ter sido evitado</p>
+                    <div ng-if="menu.finalQuiz[0].selected === 2">
+                      <p class="bigtext red bold">Resposta incorreta. O caso acima poderia ter sido evitado.</p>
                     </div>
-                    <div ng-if="menu.quiz[4].selected === 3">
+                    <div ng-if="menu.finalQuiz[0].selected === 3">
                       <p class="bigtext red bold">Resposta incorreta. Não foi por uma questão de alocação que a paciente teve piora do quadro clínico.</p>
                     </div>
                   </div>
@@ -2327,7 +2400,7 @@
                   </div>
                   <div class="inline-block-middle w-78">
                     <p class="white bold">
-                      Ao chegar na UTI, devido a evolução do caso, o plantonista opta em passar um cateter venoso
+                      Ao chegar na UTI, devido à evolução do caso, o plantonista opta em passar um cateter venoso
                       central na paciente. Qual ferramenta do HCRM Einstein você pode utilizar para garantir que o
                       procedimento seja o mais seguro possível para a paciente?
                     </p>
@@ -2337,32 +2410,32 @@
 
                   <div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[5].selected === 0}"
-                      ng-click="menu.selectQuiz(5,0)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[1].selected === 0}"
+                      ng-click="menu.selectQuiz(1,0,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>SBAR, ferramenta de comunicação efetiva, indicada para situações de urgência e emergência. </p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[5].selected === 1}"
-                      ng-click="menu.selectQuiz(5,1)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[1].selected === 1}"
+                      ng-click="menu.selectQuiz(1,1,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>STEP, ferramenta indicada para ser aplicada para ampliar a consciência situacional.</p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[5].selected === 2}"
-                      ng-click="menu.selectQuiz(5,2)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[1].selected === 2}"
+                      ng-click="menu.selectQuiz(1,2,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
-                        <p>Teach Back, ferramenta indicada para se garantir uma comunicação de alça fechada com o paciente.</p>
+                        <p><i>Teach Back</i>, ferramenta indicada para se garantir uma comunicação de alça fechada com o paciente.</p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[5].selected === 3}"
-                      ng-click="menu.selectQuiz(5,3)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[1].selected === 3}"
+                      ng-click="menu.selectQuiz(1,3,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>IPASS, ferramenta indicada para uma passagem de plantão efetiva.</p>
@@ -2371,17 +2444,17 @@
 
                   </div>
 
-                  <div class="quiz-feedback mt-2 m-mt-2" ng-if="menu.quiz[5].completed">
-                    <div ng-if="menu.quiz[5].selected === 0">
+                  <div class="quiz-feedback mt-2 m-mt-2" ng-if="menu.finalQuiz[1].completed">
+                    <div ng-if="menu.finalQuiz[1].selected === 0">
                       <p class="bigtext red bold">Resposta incorreta. SBAR é uma ferramenta de comunicação, indicada para estruturar a comunicação em situações de urgência e emergência.</p>
                     </div>
-                    <div ng-if="menu.quiz[5].selected === 1">
-                      <p class="bigtext green bold">Resposta correta. STEP é uma ferramenta, que se aplicada antes da realização de procedimentos, pode ampliar a consciência situacional e evitar eventos adversos.</p>
+                    <div ng-if="menu.finalQuiz[1].selected === 1">
+                      <p class="bigtext green bold">Resposta correta. STEP é uma ferramenta que, se aplicada antes da realização de procedimentos, pode ampliar a consciência situacional e evitar eventos adversos.</p>
                     </div>
-                    <div ng-if="menu.quiz[5].selected === 2">
+                    <div ng-if="menu.finalQuiz[1].selected === 2">
                       <p class="bigtext red bold">Resposta incorreta. Teach Bach é uma ferramenta de comunicação usada para checar o entendimento do paciente a cerca das orientações dadas a ele.</p>
                     </div>
-                    <div ng-if="menu.quiz[5].selected === 3">
+                    <div ng-if="menu.finalQuiz[1].selected === 3">
                       <p class="bigtext red bold">Resposta incorreta. IPASS é uma ferramenta de comunicação indicada para a padronização da transferência de cuidado (passagem de plantão).</p>
                     </div>
                   </div>
@@ -2412,7 +2485,7 @@
                       <div class="px-2 m-px-2">
                         <div class="px-2 m-px-2">
                           <div class="bg-black-20 border-radius center black mb-1 m-mb-1" style="padding: 0.3rem 0;">
-                            <p class="bold">S: Status do Paciente</p>
+                            <p class="bold">S: <i>Status</i> do Paciente</p>
                           </div>
                           <div class="bg-black-20 border-radius center black mb-1 m-mb-1" style="padding: 0.3rem 0;">
                             <p class="bold">T (<i>Team</i>): Membros da Equipe</p>
@@ -2429,32 +2502,32 @@
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[6].selected === 0}"
-                      ng-click="menu.selectQuiz(6,0)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[2].selected === 0}"
+                      ng-click="menu.selectQuiz(2,0,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
-                        <p>Deve-se avaliar o status da paciente e analisar os seguintes questionamentos:<br/>Qual é a história clínica desta paciente? Será que esta paciente já passou cateter central alguma vez? Houve alguma intercorrência? Quais medicamentos esta paciente está usando? Alguns destes medicamentos pode contraindicar essa passagem ou preciso ficar atento a complicações?</p>
+                        <p>Deve-se avaliar o <i>status</i> da paciente e analisar os seguintes questionamentos:<br/>Qual é a história clínica desta paciente? Será que esta paciente já passou cateter central alguma vez? Houve alguma intercorrência? Quais medicamentos esta paciente está usando? Alguns destes medicamentos pode contraindicar essa passagem ou preciso ficar atento a complicações?</p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[6].selected === 1}"
-                      ng-click="menu.selectQuiz(6,1)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[2].selected === 1}"
+                      ng-click="menu.selectQuiz(2,1,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>Deve-se ficar atento ao membro da equipe que irá passar o cateter, e lembre-se de pedir e oferecer ajuda sempre que necessário. </p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[6].selected === 2}"
-                      ng-click="menu.selectQuiz(6,2)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[2].selected === 2}"
+                      ng-click="menu.selectQuiz(2,2,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>Antes de iniciar o procedimento deve-se ficar atento ao ambiente, analisar se todos os materiais que podem ser necessários estão disponíveis, a fim de evitar intercorrências.</p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[6].selected === 3}"
-                      ng-click="menu.selectQuiz(6,3)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[2].selected === 3}"
+                      ng-click="menu.selectQuiz(2,3,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>Todas as alternativas estão corretas.</p>
@@ -2463,17 +2536,17 @@
 
                   </div>
 
-                  <div class="quiz-feedback mt-2 m-mt-2" ng-if="menu.quiz[6].completed">
-                    <div ng-if="menu.quiz[6].selected === 0">
+                  <div class="quiz-feedback mt-2 m-mt-2" ng-if="menu.finalQuiz[2].completed">
+                    <div ng-if="menu.finalQuiz[2].selected === 0">
                       <p class="bigtext red bold">É importante analisar o status do paciente, porém, também se faz necessário avaliar os outros aspectos da ferramenta.</p>
                     </div>
-                    <div ng-if="menu.quiz[6].selected === 1">
+                    <div ng-if="menu.finalQuiz[2].selected === 1">
                       <p class="bigtext red bold">É importante analisar os membros da equipe, porém, também se faz necessário avaliar os outros aspectos da ferramenta. </p>
                     </div>
-                    <div ng-if="menu.quiz[6].selected === 2">
+                    <div ng-if="menu.finalQuiz[2].selected === 2">
                       <p class="bigtext red bold">É importante analisar o ambiente, porém, também se faz necessário avaliar os outros aspectos da ferramenta.</p>
                     </div>
-                    <div ng-if="menu.quiz[6].selected === 3">
+                    <div ng-if="menu.finalQuiz[2].selected === 3">
                       <p class="bigtext green bold">Resposta correta. É importante analisar todos os itens da ferramenta STEP antes de realizar procedimentos.</p>
                     </div>
                   </div>
@@ -2491,9 +2564,9 @@
                   </div>
                   <div class="inline-block-middle w-78">
                     <p class="white bold">
-                      Uma das condutas esperadas de times de alta performance é a realização de uma auto avaliação antes
+                      Uma das condutas esperadas de times de alta performance é a realização de uma autoavaliação antes
                       da execução de procedimentos e/ou atividades que envolvam a segurança do paciente e profissional.
-                      Qual ferramenta do HCRM Einstein você pode utilizar para fazer sua auto avaliação?
+                      Qual ferramenta do HCRM Einstein você pode utilizar para fazer sua autoavaliação?
                     </p>
                   </div>
                 </div>
@@ -2501,51 +2574,51 @@
 
                   <div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[7].selected === 0}"
-                      ng-click="menu.selectQuiz(7,0)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[3].selected === 0}"
+                      ng-click="menu.selectQuiz(3,0,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>STEP, ferramenta indicada para ser aplicada para ampliar a consciência situacional.</p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[7].selected === 1}"
-                      ng-click="menu.selectQuiz(7,1)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[3].selected === 1}"
+                      ng-click="menu.selectQuiz(3,1,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p><i>I'm Safe</i>, ferramenta indicada para análise de elementos que afetam o desempenho da equipe.</p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[7].selected === 2}"
-                      ng-click="menu.selectQuiz(7,2)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[3].selected === 2}"
+                      ng-click="menu.selectQuiz(3,2,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>SBAR, ferramenta de comunicação efetiva, indicada para situações de urgência e emergência. </p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[7].selected === 3}"
-                      ng-click="menu.selectQuiz(7,3)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[3].selected === 3}"
+                      ng-click="menu.selectQuiz(3,3,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
-                        <p>iPASS, ferramenta indicada para uma passagem de plantão efetiva</p>
+                        <p>iPASS, ferramenta indicada para uma passagem de plantão efetiva.</p>
                       </div>
                     </div>
 
                   </div>
 
-                  <div class="quiz-feedback mt-2 m-mt-2" ng-if="menu.quiz[7].completed">
-                    <div ng-if="menu.quiz[7].selected === 0">
+                  <div class="quiz-feedback mt-2 m-mt-2" ng-if="menu.finalQuiz[3].completed">
+                    <div ng-if="menu.finalQuiz[3].selected === 0">
                       <p class="bigtext red bold"> Resposta incorreta. STEP é uma ferramenta que amplia a consciência situacional, mas não é a ferramenta indicada para a autoavaliação. </p>
                     </div>
-                    <div ng-if="menu.quiz[7].selected === 1">
-                      <p class="bigtext green bold">Resposta correta. A ferramenta I’m Safe te ajudará a ter consciência dos elementos que afetam o seu desempenho e permitir mitigá-los e desse modo, aumentar a segurança do paciente.</p>
+                    <div ng-if="menu.finalQuiz[3].selected === 1">
+                      <p class="bigtext green bold">Resposta correta. A ferramenta <i>I’m Safe</i> te ajudará a ter consciência dos elementos que afetam o seu desempenho e permitir mitigá-los e desse modo, aumentar a segurança do paciente.</p>
                     </div>
-                    <div ng-if="menu.quiz[7].selected === 2">
+                    <div ng-if="menu.finalQuiz[3].selected === 2">
                       <p class="bigtext red bold">Resposta incorreta. SBAR é uma ferramenta para comunicação efetiva e não é indicada para autoavaliação.</p>
                     </div>
-                    <div ng-if="menu.quiz[7].selected === 3">
+                    <div ng-if="menu.finalQuiz[3].selected === 3">
                       <p class="bigtext red bold">Resposta incorreta. IPASS é uma ferramenta para passagem de plantão e não é indicada para autoavaliação.</p>
                     </div>
                   </div>
@@ -2571,51 +2644,51 @@
 
                   <div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[8].selected === 0}"
-                      ng-click="menu.selectQuiz(8,0)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[4].selected === 0}"
+                      ng-click="menu.selectQuiz(4,0,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>Questões psicológicas e pessoais que podem afetar a capacidade de executar atividades, implicando na percepção de riscos e segurança do paciente.</p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[8].selected === 1}"
-                      ng-click="menu.selectQuiz(8,1)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[4].selected === 1}"
+                      ng-click="menu.selectQuiz(4,1,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>Questões relacionadas ao ambiente de trabalho que podem afetar na capacidade de relacionamento interpessoal da equipe.</p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[8].selected === 2}"
-                      ng-click="menu.selectQuiz(8,2)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[4].selected === 2}"
+                      ng-click="menu.selectQuiz(4,2,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
                         <p>Questões ambientais que podem afetar na capacidade de executar suas atividades e o relacionamento com a equipe médica. </p>
                       </div>
                     </div>
 
-                    <div class="question-item" ng-class="{selected: menu.quiz[8].selected === 3}"
-                      ng-click="menu.selectQuiz(8,3)">
+                    <div class="question-item" ng-class="{selected: menu.finalQuiz[4].selected === 3}"
+                      ng-click="menu.selectQuiz(4,3,true)">
                       <div class="question-selection"></div>
                       <div class="question-text">
-                        <p>Questões relacionadas à comunicação entre a equipe e membros de outras áreas de atuação, que podem afetar a capacidade de raciocino clínico e tomada de decisão.</p>
+                        <p>Questões relacionadas à comunicação entre a equipe e membros de outras áreas de atuação, que podem afetar a capacidade de raciocínio clínico e tomada de decisão.</p>
                       </div>
                     </div>
 
                   </div>
 
-                  <div class="quiz-feedback mt-2 m-mt-2" ng-if="menu.quiz[8].completed">
-                    <div ng-if="menu.quiz[8].selected === 0">
+                  <div class="quiz-feedback mt-2 m-mt-2" ng-if="menu.finalQuiz[4].completed">
+                    <div ng-if="menu.finalQuiz[4].selected === 0">
                       <p class="bigtext green bold">Resposta correta. A ferramenta <i>I’m Safe</i> possui questionamentos que envolvem questões psicológicas e pessoais. Caso algum dos itens do checklist esteja presente, lembre-se de pedir ajuda a um colega de trabalho.</p>
                     </div>
-                    <div ng-if="menu.quiz[8].selected === 1">
+                    <div ng-if="menu.finalQuiz[4].selected === 1">
                       <p class="bigtext red bold">Resposta incorreta. A ferramenta <i>I’m Safe</i> não avalia questões do ambiente.</p>
                     </div>
-                    <div ng-if="menu.quiz[8].selected === 2">
+                    <div ng-if="menu.finalQuiz[4].selected === 2">
                       <p class="bigtext red bold">Resposta incorreta. A ferramenta <i>I’m Safe</i> não avalia questões do ambiente.</p>
                     </div>
-                    <div ng-if="menu.quiz[8].selected === 3">
+                    <div ng-if="menu.finalQuiz[4].selected === 3">
                       <p class="bigtext red bold">Resposta incorreta. A ferramenta <i>I’m Safe</i> não avalia questões do ambiente.</p>
                     </div>
                   </div>
@@ -2635,7 +2708,7 @@
         <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-2">
           <div class="row">
             <div class="col-sm-4 col-sm-offset-2">
-              <div ng-if="menu.finalPoints >= 7">
+              <div ng-if="menu.finalPoints >= 4">
                 <p class="title bold blue mt-3 m-mt-3">
                   Parabéns!<br/>
                   Você foi aprovado.
@@ -2643,7 +2716,7 @@
                 <p class="black">Obrigado pela participação!</p>
               </div>
 
-              <div ng-if="menu.finalPoints < 7 && menu.game.data.currentTry === 0">
+              <div ng-if="menu.finalPoints < 4 && menu.game.data.currentTry === 0">
                 <p class="subtitle bold blue mt-5 m-mt-5">
                   Você não atingiu a nota mínima para aprovação.<br/>
                   Você possui mais duas tentativas.
@@ -2657,7 +2730,7 @@
                     </p>
                   </div>
 
-                  <div class="bg-blue border-radius mt-1 m-mt-1" style="padding: 0.6rem 1rem;" ng-click="menu.retry()">
+                  <div class="bg-blue border-radius mt-1 m-mt-1" style="padding: 0.6rem 1rem;" ng-click="menu.retryQuiz()">
                     <p class="white small center">
                       Clique aqui para<br/>
                       refazer a avaliação
@@ -2667,10 +2740,10 @@
                 </div>
               </div>
 
-              <div ng-if="menu.finalPoints < 7 && menu.game.data.currentTry === 1">
+              <div ng-if="menu.finalPoints < 4 && menu.game.data.currentTry === 1">
                 <p class="subtitle bold blue mt-5 m-mt-5">
                   Você não atingiu a nota mínima para aprovação.<br/>
-                  Você possui mais duas tentativas.
+                  Você possui mais uma tentativa.
                 </p>
 
                 <div class="">
@@ -2681,7 +2754,7 @@
                     </p>
                   </div>
 
-                  <div class="bg-blue border-radius mt-1 m-mt-1" style="padding: 0.6rem 1rem;" ng-click="menu.retry()">
+                  <div class="bg-blue border-radius mt-1 m-mt-1" style="padding: 0.6rem 1rem;" ng-click="menu.retryQuiz()">
                     <p class="white small center">
                       Clique aqui para<br/>
                       refazer a avaliação
@@ -2691,7 +2764,7 @@
                 </div>
               </div>
 
-              <div ng-if="menu.finalPoints < 7 && menu.game.data.currentTry === 2">
+              <div ng-if="menu.finalPoints < 4 && menu.game.data.currentTry === 2">
                 <p class="title bold blue mt-5 m-mt-5">
                   Você não foi aprovado no treinamento.
                 </p>
@@ -2708,14 +2781,14 @@
               </div>
 
               <div class="mt-3 m-mt-3" style="position: relative;">
-                <img ng-if="menu.finalPoints >= 7" src="assets/images/bgs/poa_final_parabens.png" alt="" style="max-height: 18rem;">
-                <img ng-if="menu.finalPoints < 7" src="assets/images/bgs/poa_final_reprovacao.png" alt="" style="max-height: 5rem;">
+                <img ng-if="menu.finalPoints >= 4" src="assets/images/bgs/poa_final_parabens.png" alt="" style="max-height: 18rem;">
+                <img ng-if="menu.finalPoints < 4" src="assets/images/bgs/poa_final_reprovacao.png" alt="" style="max-height: 5rem;">
               </div>
             </div>
             <div class="col-sm-5">
               <div style="position: relative;">
-                <img ng-if="menu.finalPoints >= 7" class="img-responsive" src="assets/images/imagens/imagem_21.png" alt="">
-                <img ng-if="menu.finalPoints < 7" class="img-responsive" src="assets/images/imagens/imagem_22.png" alt="">
+                <img ng-if="menu.finalPoints >= 4" class="img-responsive" src="assets/images/imagens/imagem_21.png" alt="">
+                <img ng-if="menu.finalPoints < 4" class="img-responsive" src="assets/images/imagens/imagem_22.png" alt="">
               </div>
             </div>
           </div>

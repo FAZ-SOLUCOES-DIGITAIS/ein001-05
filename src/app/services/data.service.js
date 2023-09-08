@@ -23,7 +23,7 @@
       data.success_score = 0.7;
 
       data.data = {
-        version: "0.1",
+        version: "0.17",
         currentTry:0,
         currentModule:0,
         currentScreen:0,
@@ -57,7 +57,9 @@
       }
 
       data.setScore = function(score){
-        data.data.score = score;
+        if(score >= data.data.score){
+          data.data.score = score;
+        }
       }
 
       data.getData = function(){
@@ -66,8 +68,15 @@
 
       data.checkCompletion = function(){
         if(data.data.completed){
-          data.completion_status = (data.scorm.version == 1.2 ? 'completed' : 'completed');
+          //data.completion_status = (data.scorm.version == 1.2 ? 'completed' : 'completed');
           //Podemos inserir outros estados no scorm 2004
+          if(data.data.score >= 70){
+            data.completion_status = "completed"
+          }else{
+            if(data.data.currentTry === 2){
+              data.completion_status = "completed"
+            }
+          }
         }
       }
 
@@ -102,7 +111,7 @@
             data.scorm.set("cmi.core.score.min", data.score_min);
             data.scorm.set("cmi.core.score.max", data.score_max);
             data.scorm.set("cmi.core.score.raw", data.data.score);
-            if(data.completion_status == "completed"){
+            if(data.completion_status == "completed" && data.data.currentTry >= 2){
               data.scorm.set("cmi.core.exit", "logout");
             }else{
               data.scorm.set("cmi.core.exit", "suspend");
@@ -121,10 +130,12 @@
           if(data.scorm.version == "2004"){
             data.success_status = data.scorm.get("cmi.success_status") || 'failed';
             data.completion_status = data.scorm.get("cmi.completion_status") || 'incomplete';
+            data.data.score = data.scorm.get("cmi.score.raw") || 0;
             state = data.scorm.get("cmi.suspend_data") || "";
           }else{
             data.completion_status = data.scorm.get("cmi.core.lesson_status") || 'incomplete';
             state = data.scorm.get("cmi.suspend_data") || "";
+            data.data.score = data.scorm.get("cmi.core.score.raw") || 0;
           }
         }else{
           state = localStorage.getItem(data.id) || "";

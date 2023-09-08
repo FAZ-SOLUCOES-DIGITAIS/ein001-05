@@ -45,7 +45,7 @@
 
         if(finished){
           game.data.completed = true;
-          game.data.score = 100;
+          //game.data.score = 100;
           game.save();
         }else{
           game.save();
@@ -57,7 +57,9 @@
       game.finishGame = function(_score){
         game.data.trilhas.trilha1.completed = true;
         game.data.completed = true;
-        game.data.score = _score || 100;
+        if(_score >= game.data.score){
+          game.data.score = _score;
+        }
         game.save();
       }
 
