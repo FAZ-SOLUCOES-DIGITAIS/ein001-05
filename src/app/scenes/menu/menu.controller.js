@@ -11,6 +11,26 @@
 
     vm.game = Game;
 
+    vm.checkFinal = function () {
+      if (
+        window.innerHeight + window.scrollY >=
+        document.body.scrollHeight - 20
+      ) {
+        // you're at the bottom of the page
+        console.log("final");
+        /*if (
+          vm.items.every(function (_item) {
+            return _item;
+          })
+        ) {*/
+          //Game.finishScreen();
+          Game.finishGame(100);
+          window.onscroll = null;
+        //}
+      }
+    };
+
+
     $timeout(function(){
       Game.hideMenu();
 
@@ -24,6 +44,8 @@
       setInterval(function(){
         AOS.init();
       },2000)
+
+      window.onscroll = vm.checkFinal;
 
     },10)
 
@@ -55,9 +77,9 @@
           answer: 0,
           points:0,
           feedback: false
-        }
+        },
 
-        ,{
+        {
           completed: false,
           selected: -1,
           answer: 0,
@@ -70,7 +92,7 @@
 
     if(!vm.game.data.outros.finalQuiz){
       vm.game.data.outros.finalQuiz = [
-        {
+        /*{
           completed: false,
           selected: -1,
           answer: 1,
@@ -100,7 +122,7 @@
           answer: 0,
           points:0,
           feedback: false
-        }
+        }*/
       ]
     }
 
@@ -122,13 +144,14 @@
         vm.items[item] = true;
         vm.currentItem = item;
 
-        /*if(vm.items.every(function(_item){
+        if(vm.items.every(function(_item){
           return _item
         })){
-          if(vm.quiz[0].completed){
+          //if(vm.quiz[0].completed){
             Game.finishScreen();
-          }
-        }*/
+            Game.finishGame(100);
+          //}
+        }
 
       })
     }
@@ -155,7 +178,7 @@
         quiz.completed = true;
         quiz.feedback = true;
 
-        if(final) vm.checkFinished();
+        //if(final) vm.checkFinished();
 
         $timeout(function(){
           AOS.init();
@@ -168,143 +191,14 @@
       vm.finalPoints = 0;
 
       $timeout(function(){
-        if(vm.finalQuiz.every(function(_item){
+        /*if(vm.finalQuiz.every(function(_item){
           vm.finalPoints += _item.points;
           return _item.completed;
         })){
           Game.finishGame(Math.round((vm.finalPoints / 5) * 100));
           vm.finishedAll = true;
-        }
+        }*/
       })
-    }
-
-    vm.retryQuiz = function(){
-      if(vm.game.data.currentTry < 2){
-        $timeout(function(){
-          vm.game.data.outros.finalQuiz = [
-            {
-              completed: false,
-              selected: -1,
-              answer: 1,
-              points:0,
-              feedback: false
-            },{
-              completed: false,
-              selected: -1,
-              answer: 1,
-              points:0,
-              feedback: false
-            },{
-              completed: false,
-              selected: -1,
-              answer: 3,
-              points:0,
-              feedback: false
-            },{
-              completed: false,
-              selected: -1,
-              answer: 1,
-              points:0,
-              feedback: false
-            },{
-              completed: false,
-              selected: -1,
-              answer: 0,
-              points:0,
-              feedback: false
-            }
-          ]
-          vm.game.data.currentTry++;
-          vm.finalQuiz = vm.game.data.outros.finalQuiz;
-          vm.finishedAll = false;
-
-          vm.game.save();
-
-          angular.element(window).scrollTop(angular.element('section.screen-24').position().top)
-        })
-      }
-    }
-
-    vm.retry = function(){
-      if(vm.game.data.currentTry < 2){
-        $timeout(function(){
-          vm.game.data.outros.finalQuiz = [
-            {
-              completed: false,
-              selected: -1,
-              answer: 1,
-              points:0,
-              feedback: false
-            },{
-              completed: false,
-              selected: -1,
-              answer: 1,
-              points:0,
-              feedback: false
-            },{
-              completed: false,
-              selected: -1,
-              answer: 3,
-              points:0,
-              feedback: false
-            },{
-              completed: false,
-              selected: -1,
-              answer: 1,
-              points:0,
-              feedback: false
-            },{
-              completed: false,
-              selected: -1,
-              answer: 0,
-              points:0,
-              feedback: false
-            }
-          ]
-
-          vm.game.data.outros.quiz = [
-          {
-            completed: false,
-            selected: -1,
-            answer: 0,
-            points:0,
-            feedback: false
-          },{
-            completed: false,
-            selected: -1,
-            answer: 0,
-            points:0,
-            feedback: false
-          },{
-            completed: false,
-            selected: -1,
-            answer: 0,
-            points:0,
-            feedback: false
-          }
-
-          ,{
-            completed: false,
-            selected: -1,
-            answer: 0,
-            points:0,
-            feedback: false
-          }
-
-        ]
-          vm.game.data.currentTry++;
-          vm.finalQuiz = vm.game.data.outros.finalQuiz;
-          vm.quiz = vm.game.data.outros.quiz;
-          vm.finishedAll = false;
-          //vm.game.data.currentTry = 0;
-
-          vm.game.save();
-
-          angular.element(window).scrollTop(0);
-        })
-      }else{
-        angular.element(window).scrollTop(0);
-      }
     }
 
 

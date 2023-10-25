@@ -91,10 +91,10 @@
 
       }
 
-      $timeout(function(){
+      /*$timeout(function(){
         angular.element(window).on('DOMMouseScroll mousewheel onmousewheel', vm.scrollHandler);
         angular.element(window).on('onkeyup keyup', vm.checkKey)
-      },100)
+      },100)*/
 
 
       vm.nextScreen = function(){
