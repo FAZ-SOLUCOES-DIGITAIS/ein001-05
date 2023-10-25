@@ -23,7 +23,7 @@
       data.success_score = 0.7;
 
       data.data = {
-        version: "0.18",
+        version: "0.19",
         currentTry:0,
         currentModule:0,
         currentScreen:0,
