@@ -6,6 +6,7 @@
   min-height calc(100 * var(--vh))
   background white
   padding 2rem 0
+  padding-bottom 0
   overflow-x hidden
 
   .screen
@@ -875,6 +876,40 @@
       background-size contain
       z-index 0
 
+  .screen.screen-26
+    position relative
+    background #f8f8f8
+    z-index 10
+    padding 4rem 0
+
+    &:before
+      content ""
+      position absolute
+      left -15px
+      top 0
+      width calc(100% + 30px)
+      height 100%
+      background url(../assets/images/bgs/bg_degrade_02.png)
+      background-position top center
+      background-repeat no-repeat
+      background-size cover
+      z-index 0
+
+    .box-big
+      padding 3rem 4rem
+
+    .ref-item
+      position relative
+
+      .item-number
+        width 4rem
+        position absolute
+        left -4rem
+        top 0
+
+        p
+          text-align right
+          padding-right 0.6rem
 
 
   .left-balls

@@ -115,7 +115,7 @@ gulp.task('manifest', ['html', 'fonts', 'other', 'copyJS'], function() {
     return gulp.src('dist/**')
       .pipe(manifest({
         version: '1.2',
-        courseId: 'einstein-001-05_2',
+        courseId: 'einstein-2023-006',
         SCOtitle: 'Einstein - Consciência Situacional',
         moduleTitle: 'Einstein - Consciência Situacional',
         launchPage: 'index.html',
@@ -136,7 +136,7 @@ gulp.task('manifestfinal', ['html', 'fonts', 'otherfinal', 'copyJS', 'tinypng'],
     return gulp.src('dist/**')
       .pipe(manifest({
         version: '1.2',
-        courseId: 'einstein-001-05_2',
+        courseId: 'einstein-2023-006',
         SCOtitle: 'Einstein - Consciência Situacional',
         moduleTitle: 'Einstein - Consciência Situacional',
         launchPage: 'index.html',
@@ -159,14 +159,14 @@ gulp.task('copyJS', function () {
 gulp.task('zip',['manifest'], function () {
   return gulp.src('dist/**')
     //.pipe(wait(1000))
-    .pipe(zip('einstein-001-05_2_scorm.zip'))
+    .pipe(zip('einstein-2023-006_scorm.zip'))
     .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('zipfinal',['manifestfinal'], function () {
   return gulp.src('dist/**')
     //.pipe(wait(1000))
-    .pipe(zip('einstein-001-05_2_scorm.zip'))
+    .pipe(zip('einstein-2023-006_scorm.zip'))
     .pipe(gulp.dest('dist/'));
 });
 
